@@ -1,92 +1,224 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Алиби Тулкібай | Портфолио по месту требования</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
+    <title>Алиби Тулкібай | Портфолио</title>
 
-body{
-font-family:Arial,sans-serif;
-background:#111827;
-color:white;
-}
+    <meta name="description"
+        content="Портфолио Алиби Тулкібай. IT-специалист, преподаватель программирования, робототехники и 3D-моделирования.">
 
-header{
-height:100vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:20px;
-background:linear-gradient(135deg,#2563eb,#111827);
-}
+    <link rel="stylesheet" href="style.css">
 
-h1{
-font-size:60px;
-margin-bottom:15px;
-}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 
-h2{
-font-size:35px;
-margin-bottom:20px;
-}
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-p{
-font-size:20px;
-max-width:700px;
-line-height:1.7;
-}
-
-.btn{
-margin-top:30px;
-padding:15px 35px;
-background:#3b82f6;
-color:white;
-text-decoration:none;
-border-radius:8px;
-font-size:20px;
-}
-
-section{
-padding:80px 20px;
-text-align:center;
-}
-</style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
 
 </head>
 
 <body>
 
-<header>
+    <!-- ======================
+            ШАПКА
+    ======================= -->
 
-<h1>Алиби Тулкібай</h1>
+    <header class="header">
 
-<p>
-IT-специалист • Преподаватель программирования • Робототехника • Оснащение образовательных учреждений
-</p>
+        <div class="container">
 
-<a class="btn" href="#about">Обо мне</a>
+            <a href="#" class="logo">
+                Алиби
+            </a>
 
-</header>
+            <nav>
 
-<section id="about">
+                <ul class="menu">
 
-<h2>Обо мне</h2>
+                    <li><a href="#home">Главная</a></li>
 
-<p>
-Добро пожаловать на мой официальный сайт-портфолио. меня зовут Алиби.
-Здесь вы найдете информацию обо мне, моем опыте, проектах и способах связи.
-</p>
+                    <li><a href="#about">Обо мне</a></li>
 
-</section>
+                    <li><a href="#experience">Опыт</a></li>
 
-</body>
-</html>
+                    <li><a href="#skills">Навыки</a></li>
+
+                    <li><a href="#portfolio">Портфолио</a></li>
+
+                    <li><a href="#contacts">Контакты</a></li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <!-- ======================
+            ГЛАВНЫЙ ЭКРАН
+    ======================= -->
+
+    <section id="home" class="hero">
+
+        <div class="container hero-content">
+
+            <div class="hero-text">
+
+                <span class="hero-subtitle">
+                    Добро пожаловать
+                </span>
+
+                <h1>
+
+                    Алиби Тулкібай
+
+                </h1>
+
+                <h2>
+
+                    IT-специалист • Преподаватель • Инженер
+
+                </h2>
+
+                <p>
+
+                    Преподаватель программирования, робототехники,
+                    3D-моделирования и специальных дисциплин.
+                    Специалист по оснащению образовательных учреждений,
+                    внедрению IT-решений и современных технологий обучения.
+
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#portfolio" class="btn btn-primary">
+
+                        Смотреть проекты
+
+                    </a>
+
+                    <a href="files/resume.pdf"
+
+                        class="btn btn-outline"
+
+                        target="_blank">
+
+                        Скачать резюме
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="hero-image">
+
+                <img
+
+                    src="images/avatar.jpg"
+
+                    alt="Фото Алиби">
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ======================
+            ОБО МНЕ
+    ======================= -->
+
+    <section id="about" class="about">
+
+        <div class="container">
+
+            <h2 class="section-title">
+
+                Обо мне
+
+            </h2>
+
+            <p class="section-text">
+
+                Я IT-специалист с опытом преподавания программирования,
+                робототехники, 3D-моделирования и специальных дисциплин.
+
+                Также имею опыт комплексного оснащения школ,
+                колледжей и образовательных учреждений мебелью,
+                компьютерной техникой, интерактивными панелями,
+                STEM-лабораториями и современными IT-решениями.
+
+            </p>
+
+            <div class="about-cards">
+
+                <div class="card">
+
+                    <h3>
+
+                        👨‍🏫 Преподавание
+
+                    </h3>
+
+                    <p>
+
+                        Python, Arduino,
+                        Scratch,
+                        Робототехника,
+                        3D-моделирование
+
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>
+
+                        🏫 Оснащение
+
+                    </h3>
+
+                    <p>
+
+                        Компьютерные классы,
+                        интерактивные панели,
+                        мебель,
+                        лаборатории,
+                        серверное оборудование.
+
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>
+
+                        💻 IT
+
+                    </h3>
+
+                    <p>
+
+                        Веб-разработка,
+                        автоматизация,
+                        Excel,
+                        Python,
+                        техническая поддержка.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
