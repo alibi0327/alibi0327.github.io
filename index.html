@@ -1,224 +1,566 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Алиби Тулкібай | Портфолио</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description"
-        content="Портфолио Алиби Тулкібай. IT-специалист, преподаватель программирования, робототехники и 3D-моделирования.">
+<title>Алиби Тулкібай | IT-специалист</title>
 
-    <link rel="stylesheet" href="style.css">
+<style>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+body{
+font-family:Arial,sans-serif;
+background:#0f172a;
+color:white;
+line-height:1.6;
+}
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
+header{
+
+height:100vh;
+
+background:linear-gradient(135deg,#2563eb,#1e3a8a);
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+padding:20px;
+
+}
+
+.hero h1{
+
+font-size:70px;
+
+margin-bottom:20px;
+
+}
+
+.hero h2{
+
+font-size:28px;
+
+font-weight:normal;
+
+margin-bottom:20px;
+
+}
+
+.hero p{
+
+font-size:20px;
+
+max-width:900px;
+
+margin:auto;
+
+margin-bottom:40px;
+
+}
+
+.btn{
+
+display:inline-block;
+
+padding:15px 40px;
+
+background:#3b82f6;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:8px;
+
+font-size:20px;
+
+transition:.3s;
+
+}
+
+.btn:hover{
+
+background:#60a5fa;
+
+}
+
+section{
+
+padding:80px 12%;
+
+}
+
+h2{
+
+font-size:42px;
+
+text-align:center;
+
+margin-bottom:50px;
+
+}
+
+.about{
+
+display:flex;
+
+gap:50px;
+
+align-items:center;
+
+flex-wrap:wrap;
+
+}
+
+.about img{
+
+width:320px;
+
+border-radius:20px;
+
+box-shadow:0 0 25px rgba(0,0,0,.5);
+
+}
+
+.about-text{
+
+flex:1;
+
+font-size:21px;
+
+}
+
+.cards{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:30px;
+
+}
+
+.card{
+
+background:#1e293b;
+
+padding:30px;
+
+border-radius:15px;
+
+transition:.3s;
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+
+background:#334155;
+
+}
+
+.card h3{
+
+margin-bottom:15px;
+
+font-size:28px;
+
+}
+
+.skills{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:25px;
+
+}
+
+.skill{
+
+background:#1e293b;
+
+padding:25px;
+
+border-radius:15px;
+
+font-size:20px;
+
+}
+
+.portfolio{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+
+gap:30px;
+
+}
+
+.project{
+
+background:#1e293b;
+
+border-radius:15px;
+
+overflow:hidden;
+
+}
+
+.project img{
+
+width:100%;
+
+height:220px;
+
+object-fit:cover;
+
+}
+
+.project div{
+
+padding:20px;
+
+}
+
+.contact{
+
+text-align:center;
+
+font-size:22px;
+
+}
+
+footer{
+
+padding:30px;
+
+background:#020617;
+
+text-align:center;
+
+color:#aaa;
+
+}
+
+nav{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+background:#111827;
+
+padding:18px;
+
+display:flex;
+
+justify-content:center;
+
+gap:40px;
+
+z-index:1000;
+
+}
+
+nav a{
+
+color:white;
+
+text-decoration:none;
+
+font-size:18px;
+
+}
+
+nav a:hover{
+
+color:#60a5fa;
+
+}
+
+</style>
 
 </head>
 
 <body>
 
-    <!-- ======================
-            ШАПКА
-    ======================= -->
+<nav>
 
-    <header class="header">
+<a href="#home">Главная</a>
 
-        <div class="container">
+<a href="#about">Обо мне</a>
 
-            <a href="#" class="logo">
-                Алиби
-            </a>
+<a href="#experience">Опыт</a>
 
-            <nav>
+<a href="#skills">Навыки</a>
 
-                <ul class="menu">
+<a href="#portfolio">Портфолио</a>
 
-                    <li><a href="#home">Главная</a></li>
+<a href="#contact">Контакты</a>
 
-                    <li><a href="#about">Обо мне</a></li>
+</nav>
 
-                    <li><a href="#experience">Опыт</a></li>
+<header id="home">
 
-                    <li><a href="#skills">Навыки</a></li>
+<div class="hero">
 
-                    <li><a href="#portfolio">Портфолио</a></li>
+<h1>Алиби Тулкібай</h1>
 
-                    <li><a href="#contacts">Контакты</a></li>
+<h2>IT-специалист • Преподаватель • Инженер</h2>
 
-                </ul>
+<p>
 
-            </nav>
+Преподаватель программирования, робототехники, 3D-моделирования и специальных дисциплин.
+Специалист по оснащению образовательных учреждений, внедрению IT-решений и современных технологий обучения.
 
-        </div>
+</p>
 
-    </header>
+<a href="#about" class="btn">Подробнее обо мне</a>
 
-    <!-- ======================
-            ГЛАВНЫЙ ЭКРАН
-    ======================= -->
+</div>
 
-    <section id="home" class="hero">
+</header>
 
-        <div class="container hero-content">
+<section id="about">
 
-            <div class="hero-text">
+<h2>Обо мне</h2>
 
-                <span class="hero-subtitle">
-                    Добро пожаловать
-                </span>
+<div class="about">
 
-                <h1>
+<img src="photo.jpg" alt="Фото">
 
-                    Алиби Тулкібай
+<div class="about-text">
 
-                </h1>
+<p>
 
-                <h2>
+Меня зовут <b>Алиби Тулкібай</b>.
 
-                    IT-специалист • Преподаватель • Инженер
+Я IT-специалист с опытом работы преподавателем программирования, робототехники,
+3D-моделирования и специальных дисциплин.
 
-                </h2>
+</p>
 
-                <p>
+<br>
 
-                    Преподаватель программирования, робототехники,
-                    3D-моделирования и специальных дисциплин.
-                    Специалист по оснащению образовательных учреждений,
-                    внедрению IT-решений и современных технологий обучения.
+<p>
 
-                </p>
+Также имею опыт комплексного оснащения образовательных учреждений мебелью,
+компьютерной техникой, интерактивными панелями,
+лабораторным оборудованием и современными IT-решениями.
 
-                <div class="hero-buttons">
+</p>
 
-                    <a href="#portfolio" class="btn btn-primary">
+</div>
 
-                        Смотреть проекты
+</div>
 
-                    </a>
+</section>
 
-                    <a href="files/resume.pdf"
+<section id="experience">
 
-                        class="btn btn-outline"
+<h2>Опыт работы</h2>
 
-                        target="_blank">
+<div class="cards">
 
-                        Скачать резюме
+<div class="card">
 
-                    </a>
+<h3>Преподаватель колледжа</h3>
 
-                </div>
+<p>
 
-            </div>
+Практические занятия по радиотехнике и электронике.
 
-            <div class="hero-image">
+Контроль студентов на производственной практике.
 
-                <img
+Обучение программированию.
 
-                    src="images/avatar.jpg"
+</p>
 
-                    alt="Фото Алиби">
+</div>
 
-            </div>
+<div class="card">
 
-        </div>
+<h3>Преподаватель школы</h3>
 
-    </section>
+<p>
 
-    <!-- ======================
-            ОБО МНЕ
-    ======================= -->
+Python
 
-    <section id="about" class="about">
+Arduino
 
-        <div class="container">
+Scratch
 
-            <h2 class="section-title">
+3D-моделирование
 
-                Обо мне
+Робототехника
 
-            </h2>
+STEM
 
-            <p class="section-text">
+</p>
 
-                Я IT-специалист с опытом преподавания программирования,
-                робототехники, 3D-моделирования и специальных дисциплин.
+</div>
 
-                Также имею опыт комплексного оснащения школ,
-                колледжей и образовательных учреждений мебелью,
-                компьютерной техникой, интерактивными панелями,
-                STEM-лабораториями и современными IT-решениями.
+<div class="card">
 
-            </p>
+<h3>Оснащение школ</h3>
 
-            <div class="about-cards">
+<p>
 
-                <div class="card">
+Компьютерные классы
 
-                    <h3>
+Интерактивные панели
 
-                        👨‍🏫 Преподавание
+Мебель
 
-                    </h3>
+Лаборатории
 
-                    <p>
+IT-инфраструктура
 
-                        Python, Arduino,
-                        Scratch,
-                        Робототехника,
-                        3D-моделирование
+</p>
 
-                    </p>
+</div>
 
-                </div>
+</div>
 
-                <div class="card">
+</section>
 
-                    <h3>
+<section id="skills">
 
-                        🏫 Оснащение
+<h2>Навыки</h2>
 
-                    </h3>
+<div class="skills">
 
-                    <p>
+<div class="skill">Python</div>
 
-                        Компьютерные классы,
-                        интерактивные панели,
-                        мебель,
-                        лаборатории,
-                        серверное оборудование.
+<div class="skill">HTML/CSS</div>
 
-                    </p>
+<div class="skill">Arduino</div>
 
-                </div>
+<div class="skill">Scratch</div>
 
-                <div class="card">
+<div class="skill">3D-моделирование</div>
 
-                    <h3>
+<div class="skill">Excel</div>
 
-                        💻 IT
+<div class="skill">Компьютерные сети</div>
 
-                    </h3>
+<div class="skill">Интерактивное оборудование</div>
 
-                    <p>
+<div class="skill">Техническая поддержка</div>
 
-                        Веб-разработка,
-                        автоматизация,
-                        Excel,
-                        Python,
-                        техническая поддержка.
+</div>
 
-                    </p>
+</section>
 
-                </div>
+<section id="portfolio">
 
-            </div>
+<h2>Портфолио</h2>
 
-        </div>
+<div class="portfolio">
 
-    </section>
+<div class="project">
+
+<img src="project1.jpg">
+
+<div>
+
+<h3>Оснащение кабинетов</h3>
+
+<p>
+
+Комплексное оснащение образовательных учреждений.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="project">
+
+<img src="project2.jpg">
+
+<div>
+
+<h3>Программирование</h3>
+
+<p>
+
+Разработка учебных проектов на Python.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="project">
+
+<img src="project3.jpg">
+
+<div>
+
+<h3>Робототехника</h3>
+
+<p>
+
+Работа с Arduino и STEM-оборудованием.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2>Контакты</h2>
+
+<div class="contact">
+
+<p>📱 WhatsApp: +7 XXX XXX XX XX</p>
+
+<p>📧 Email: your@email.com</p>
+
+<p>💻 GitHub: github.com/alibi0327</p>
+
+<p>📍 Казахстан, Алматы</p>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 Алиби Тулкібай | Все права защищены
+
+</footer>
+
+</body>
+
+</html>
