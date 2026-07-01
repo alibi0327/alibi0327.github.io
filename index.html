@@ -148,6 +148,19 @@ font-size:21px;
     grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
     gap:30px;
 }
+
+.logo{
+position:absolute;
+left:20px;
+top:50%;
+transform:translateY(-50%);
+}
+
+.logo img{
+height:35px;
+width:auto;
+display:block;
+}
     
 .card{
 background:#1e293b;
@@ -240,6 +253,9 @@ color:#60a5fa;
 </head>
 <body>
 <nav>
+    <a href="#home" class="logo">
+    <img src="image/logo.png" alt="Логотип">
+</a>
 <a href="#home">Главная</a>
 <a href="#about">Обо мне</a>
 <a href="#education">Образование</a>
