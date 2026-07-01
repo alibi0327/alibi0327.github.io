@@ -161,6 +161,33 @@ height:80px;
 width:auto;
 display:block;
 }
+
+/* Кнопки выбора языка */
+.language-switcher{
+    margin-left:auto;
+    display:flex;
+    align-items:center;
+    gap:8px;
+    margin-right:20px;
+}
+
+.language-switcher button{
+    width:55px;
+    height:34px;
+    border:2px solid #60a5fa;
+    border-radius:8px;
+    background:transparent;
+    color:#fff;
+    font-size:14px;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.language-switcher button:hover{
+    background:#60a5fa;
+    color:#111827;
+}
     
 .card{
 background:#1e293b;
@@ -264,6 +291,10 @@ color:#60a5fa;
 <a href="#portfolio">Портфолио</a>
 <a href="#certificates">Сертификаты</a>
 <a href="#contact">Контакты</a>
+<div class="language-switcher">
+    <button onclick="setLanguage('ru')">РУС</button>
+    <button onclick="setLanguage('kz')">ҚАЗ</button>
+</div>
 </nav>
 <header id="home">
 <div class="hero">
