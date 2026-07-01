@@ -259,26 +259,7 @@ object-fit:cover;
 .project div{
 padding:20px;
 }
-
-<script>
-function setLanguage(lang){
-
-    document.querySelectorAll('.ru').forEach(el=>{
-        el.style.display = (lang==='ru') ? '' : 'none';
-    });
-
-    document.querySelectorAll('.kz').forEach(el=>{
-        el.style.display = (lang==='kz') ? '' : 'none';
-    });
-
-    localStorage.setItem('lang', lang);
-}
-
-window.onload = function(){
-    setLanguage(localStorage.getItem('lang') || 'ru');
-}
-</script>
-        
+     
 .contact{
 text-align:center;
 font-size:22px;
@@ -802,4 +783,22 @@ alibi0327.github.io
 © 2026 Әліби Түлкібай | Все права защищены
 </footer>
 </body>
+<script>
+function setLanguage(lang){
+
+    document.querySelectorAll('.ru').forEach(el=>{
+        el.style.display = (lang==='ru') ? '' : 'none';
+    });
+
+    document.querySelectorAll('.kz').forEach(el=>{
+        el.style.display = (lang==='kz') ? '' : 'none';
+    });
+
+    localStorage.setItem('lang', lang);
+}
+
+window.onload = function(){
+    setLanguage(localStorage.getItem('lang') || 'ru');
+}
+</script>
 </html>
