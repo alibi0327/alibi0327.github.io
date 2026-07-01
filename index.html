@@ -190,7 +190,10 @@ display:block;
     color:#111827;
 }
 
-
+.kz{
+    display:none;
+}
+    
 nav{
     position:fixed;
     top:0;
@@ -346,18 +349,52 @@ color:#60a5fa;
     </div>
 </nav>
 <header id="home">
+
 <div class="hero">
+
 <h1>Түлкібай Әліби Абайұлы</h1>
-<h2>IT-специалист • Преподаватель • Инженер • Проектный менеджер</h2>
+
+<h2>
+
+<span class="ru">
+IT-специалист • Преподаватель • Инженер • Проектный менеджер
+</span>
+
+<span class="kz">
+IT маманы • Оқытушы • Инженер • Жоба менеджері
+</span>
+
+</h2>
 
 <p>
 
+<span class="ru">
 Преподаватель программирования, робототехники, 3D-моделирования и специальных дисциплин.
 Специалист по оснащению образовательных учреждений, внедрению IT-решений и современных технологий обучения.
+</span>
+
+<span class="kz">
+Бағдарламалау, робототехника, 3D модельдеу және арнайы пәндер оқытушысы.
+Білім беру ұйымдарын заманауи жабдықтармен қамтамасыз ету, IT шешімдерін енгізу және білім беру технологияларын дамыту бойынша маман.
+</span>
 
 </p>
 
-<a href="#about" class="btn">Подробнее обо мне</a>
+<a href="#about" class="btn">
+
+<span class="ru">
+Подробнее обо мне
+</span>
+
+<span class="kz">
+Мен туралы толығырақ
+</span>
+
+</a>
+
+</div>
+
+</header>
 </div>
 </header>
 <section id="about">
@@ -783,19 +820,27 @@ alibi0327.github.io
 <script>
 function setLanguage(lang){
 
-    document.querySelectorAll('.ru').forEach(el=>{
-        el.style.display = (lang==='ru') ? '' : 'none';
+    document.querySelectorAll(".ru").forEach(function(el){
+        el.style.display = (lang === "ru") ? "inline" : "none";
     });
 
-    document.querySelectorAll('.kz').forEach(el=>{
-        el.style.display = (lang==='kz') ? '' : 'none';
+    document.querySelectorAll(".kz").forEach(function(el){
+        el.style.display = (lang === "kz") ? "inline" : "none";
     });
 
-    localStorage.setItem('lang', lang);
+    localStorage.setItem("lang", lang);
 }
 
-window.onload = function(){
-    setLanguage(localStorage.getItem('lang') || 'ru');
-}
+window.addEventListener("DOMContentLoaded", function(){
+
+    let lang = localStorage.getItem("lang");
+
+    if(!lang){
+        lang = "ru";
+    }
+
+    setLanguage(lang);
+
+});
 </script>
 </html>
