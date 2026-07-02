@@ -1,10 +1,15 @@
-/*======================================
-        Плавная прокрутка
-======================================*/
+/*=========================================
+        PORTFOLIO 2026
+        script.js
+=========================================*/
 
-document.querySelectorAll('a[href^="#"]').forEach(link=>{
+// ------------------------------
+// Плавная прокрутка
+// ------------------------------
 
-    link.addEventListener("click",function(e){
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+
+    link.addEventListener("click", function(e){
 
         e.preventDefault();
 
@@ -24,10 +29,137 @@ document.querySelectorAll('a[href^="#"]').forEach(link=>{
 
 });
 
+// ------------------------------
+// Липкое меню
+// ------------------------------
 
-/*======================================
-        Анимация появления блоков
-======================================*/
+const header=document.querySelector("header");
+
+window.addEventListener("scroll",()=>{
+
+    if(window.scrollY>40){
+
+        header.classList.add("sticky");
+
+    }else{
+
+        header.classList.remove("sticky");
+
+    }
+
+});
+
+// ------------------------------
+// Кнопка наверх
+// ------------------------------
+
+const toTop=document.getElementById("toTop");
+
+if(toTop){
+
+window.addEventListener("scroll",()=>{
+
+if(window.scrollY>500){
+
+toTop.classList.add("show");
+
+}else{
+
+toTop.classList.remove("show");
+
+}
+
+});
+
+toTop.onclick=()=>{
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+};
+
+}
+
+// ------------------------------
+// Печатающийся текст
+// ------------------------------
+
+const typing=document.getElementById("typing");
+
+if(typing){
+
+const words=[
+
+"IT Project Manager",
+
+"STEM Trainer",
+
+"Engineer",
+
+"Project Coordinator"
+
+];
+
+let wordIndex=0;
+let charIndex=0;
+let deleting=false;
+
+function typeEffect(){
+
+const word=words[wordIndex];
+
+if(!deleting){
+
+charIndex++;
+
+}else{
+
+charIndex--;
+
+}
+
+typing.textContent=word.substring(0,charIndex);
+
+if(!deleting && charIndex===word.length){
+
+deleting=true;
+
+setTimeout(typeEffect,1500);
+
+return;
+
+}
+
+if(deleting && charIndex===0){
+
+deleting=false;
+
+wordIndex++;
+
+if(wordIndex>=words.length){
+
+wordIndex=0;
+
+}
+
+}
+
+setTimeout(typeEffect,deleting?50:100);
+
+}
+
+typeEffect();
+
+}
+
+// ------------------------------
+// Анимация появления
+// ------------------------------
 
 const observer=new IntersectionObserver((entries)=>{
 
@@ -42,129 +174,37 @@ entry.target.classList.add("show");
 });
 
 },{
-threshold:0.2
-});
 
-document.querySelectorAll("section,.stat-box,.card,.project,.skill").forEach(el=>{
-
-el.classList.add("hidden");
-
-observer.observe(el);
+threshold:.15
 
 });
 
+document.querySelectorAll("section,.project,.skill-card,.timeline-item,.cert,.contact-box").forEach(item=>{
 
-/*======================================
-        Счетчики
-======================================*/
+item.classList.add("hidden");
 
-const counters=document.querySelectorAll(".stat-box h3");
-
-let started=false;
-
-function runCounter(){
-
-if(started) return;
-
-started=true;
-
-counters.forEach(counter=>{
-
-const text=counter.innerText;
-
-const number=parseInt(text.replace(/\D/g,""));
-
-if(isNaN(number)) return;
-
-let start=0;
-
-const speed=Math.ceil(number/120);
-
-function update(){
-
-start+=speed;
-
-if(start<number){
-
-counter.innerHTML=start+
-
-(text.includes("+")?"+":"")+
-
-(text.includes("₸")?" ₸":"");
-
-requestAnimationFrame(update);
-
-}else{
-
-counter.innerHTML=text;
-
-}
-
-}
-
-update();
+observer.observe(item);
 
 });
 
-}
-
-const stats=document.querySelector(".statistics");
-
-const statsObserver=new IntersectionObserver(entries=>{
-
-if(entries[0].isIntersecting){
-
-runCounter();
-
-}
-
-});
-
-statsObserver.observe(stats);
-
-
-/*======================================
-        Меню при прокрутке
-======================================*/
-
-window.addEventListener("scroll",()=>{
-
-const header=document.querySelector(".header");
-
-if(window.scrollY>60){
-
-header.classList.add("sticky");
-
-}else{
-
-header.classList.remove("sticky");
-
-}
-
-});
-
-
-/*======================================
-        Подсветка активного меню
-======================================*/
+// ------------------------------
+// Подсветка активного меню
+// ------------------------------
 
 const sections=document.querySelectorAll("section");
-
-const navLinks=document.querySelectorAll(".navbar a");
+const navLinks=document.querySelectorAll("nav a");
 
 window.addEventListener("scroll",()=>{
 
-let current="";
+let currentSection="";
 
 sections.forEach(section=>{
 
 const top=section.offsetTop-150;
 
-const height=section.clientHeight;
+if(window.scrollY>=top){
 
-if(pageYOffset>=top){
-
-current=section.getAttribute("id");
+currentSection=section.id;
 
 }
 
@@ -174,7 +214,7 @@ navLinks.forEach(link=>{
 
 link.classList.remove("active");
 
-if(link.getAttribute("href")==="#"+current){
+if(link.getAttribute("href")==="#"+currentSection){
 
 link.classList.add("active");
 
@@ -183,75 +223,60 @@ link.classList.add("active");
 });
 
 });
-const words=[
 
-"IT Project Manager",
+// ------------------------------
+// Мобильное меню
+// ------------------------------
 
-"STEM Trainer",
+const menuBtn=document.querySelector(".menu-btn");
+const nav=document.querySelector("nav");
 
-"Engineer",
+if(menuBtn){
 
-"IT Specialist"
+menuBtn.addEventListener("click",()=>{
 
-];
+nav.classList.toggle("open");
 
-let i=0;
-
-let j=0;
-
-let current="";
-
-let deleting=false;
-
-function type(){
-
-current=words[i];
-
-if(!deleting){
-
-j++;
-
-}else{
-
-j--;
+});
 
 }
 
-document.getElementById("typing").textContent=current.substring(0,j);
+// ------------------------------
+// Закрывать меню после клика
+// ------------------------------
 
-if(!deleting && j==current.length){
+navLinks.forEach(link=>{
 
-deleting=true;
+link.addEventListener("click",()=>{
 
-setTimeout(type,1200);
+if(nav.classList.contains("open")){
 
-return;
-
-}
-
-if(deleting && j==0){
-
-deleting=false;
-
-i++;
-
-if(i>=words.length)i=0;
+nav.classList.remove("open");
 
 }
 
-setTimeout(type,deleting?40:90);
+});
 
-}
+});
 
-type();
-window.onload=()=>{
+// ------------------------------
+// Прелоадер (если есть)
+// ------------------------------
 
-document.getElementById("loader").style.opacity="0";
+window.addEventListener("load",()=>{
+
+const loader=document.getElementById("loader");
+
+if(loader){
+
+loader.style.opacity="0";
 
 setTimeout(()=>{
 
-document.getElementById("loader").style.display="none";
+loader.style.display="none";
 
-},600);
+},500);
 
 }
+
+});
