@@ -5,747 +5,1042 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Түлкібай Әліби Абайұлы| Портфолио</title>
+<title>Түлкібай Әліби Абайұлы | Portfolio</title>
 
-<style>
+<link rel="stylesheet" href="style.css">
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-html{
-scroll-behavior:smooth;
-}
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-body{
-font-family:Arial,sans-serif;
-background:#0f172a;
-color:white;
-line-height:1.6;
-}
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
-header{
-height:100vh;
-background:linear-gradient(135deg,#2563eb,#1e3a8a);
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:20px;
-}
-
-.hero h1{
-font-size:70px;
-margin-bottom:20px;
-}
-
-.hero h2{
-font-size:28px;
-font-weight:normal;
-margin-bottom:20px;
-}
-
-.hero p{
-font-size:20px;
-max-width:900px;
-margin:auto;
-margin-bottom:40px;
-}
-
-.btn{
-display:inline-block;
-padding:15px 40px;
-background:#3b82f6;
-color:white;
-text-decoration:none;
-border-radius:8px;
-font-size:20px;
-transition:.3s;
-}
-
-.btn:hover{
-background:#60a5fa;
-}
-
-section{
-padding:80px 12%;
-}
-
-h2{
-font-size:42px;
-text-align:center;
-margin-bottom:50px;
-}
-
-.about{
-display:flex;
-gap:50px;
-align-items:center;
-flex-wrap:wrap;
-}
-
-.about img{
-width:320px;
-border-radius:20px;
-box-shadow:0 0 25px rgba(0,0,0,.5);
-}
-
-.about-text{
-flex:1;
-font-size:21px;
-}
-
-.details{
-    margin-top:15px;
-}
-
-.details summary{
-    cursor:pointer;
-    font-size:18px;
-    font-weight:bold;
-    color:#60a5fa;
-    margin-bottom:10px;
-    outline:none;
-}
-
-.details summary:hover{
-    color:#93c5fd;
-}
-
-.details ul{
-    margin-top:10px;
-    padding-left:20px;
-}
-
-.details li{
-    margin-bottom:8px;
-    line-height:1.6;
-}
-
-
-.experience-cards{
-    display:grid;
-    grid-template-columns:repeat(3, 1fr);
-    gap:30px;
-}
-
-@media (max-width:992px){
-    .experience-cards{
-        grid-template-columns:repeat(2,1fr);
-    }
-}
-
-@media (max-width:768px){
-    .experience-cards{
-        grid-template-columns:1fr;
-    }
-}
-
-.cards{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:30px;
-}
-
-.logo{
-position:absolute;
-left:20px;
-top:50%;
-transform:translateY(-50%);
-}
-
-.logo img{
-height:80px;
-width:auto;
-display:block;
-}
-
-/* Кнопки выбора языка */
-.language-switcher{
-    position:absolute;
-    top:50%;
-    right:25px;
-    transform:translateY(-50%);
-    display:flex;
-    gap:8px;
-}
-
-.language-switcher button{
-    width:55px;
-    height:34px;
-    border:2px solid #60a5fa;
-    border-radius:8px;
-    background:transparent;
-    color:#fff;
-    font-size:14px;
-    font-weight:600;
-    cursor:pointer;
-    transition:0.3s;
-}
-
-.language-switcher button:hover{
-    background:#60a5fa;
-    color:#111827;
-}
-
-nav{
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    background:#111827;
-    padding:18px;
-    display:flex;
-    justify-content:center;
-    gap:40px;
-    z-index:1000;
-
-    position:fixed;
-}
-.card{
-background:#1e293b;
-padding:30px;
-border-radius:15px;
-transition:.3s;
-}
-
-.card:hover{
-transform:translateY(-10px);
-background:#334155;
-}
-
-.card h3{
-margin-bottom:15px;
-font-size:28px;
-}
-
-.skills{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-}
-
-.skill{
-background:#1e293b;
-padding:25px;
-border-radius:15px;
-font-size:20px;
-}
-
-.portfolio{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
-gap:30px;
-}
-
-.project{
-background:#1e293b;
-border-radius:15px;
-overflow:hidden;
-}
-
-.project img{
-width:100%;
-height:220px;
-object-fit:cover;
-}
-
-.project div{
-padding:20px;
-}
-
-.contact{
-text-align:center;
-font-size:22px;
-}
-
-footer{
-padding:30px;
-background:#020617;
-text-align:center;
-color:#aaa;
-}
-
-nav{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-background:#111827;
-padding:18px;
-display:flex;
-justify-content:center;
-gap:40px;
-z-index:1000;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-font-size:18px;
-}
-
-nav a:hover{
-color:#60a5fa;
-}
-
-</style>
 </head>
+
 <body>
-<nav>
-    <a href="#home" class="logo">
-    <img src="image/Gp.png" alt="Логотип">
-</a>
-<a href="#home">Главная</a>
-<a href="#about">Обо мне</a>
-<a href="#education">Образование</a>
-<a href="#experience">Опыт</a>
-<a href="#skills">Навыки</a>
-<a href="#portfolio">Портфолио</a>
-<a href="#certificates">Сертификаты</a>
-<a href="#contact">Контакты</a>
-<div class="language-switcher">
-    <button onclick="setLanguage('ru')">РУС</button>
-    <button onclick="setLanguage('kz')">ҚАЗ</button>
+
+<!-- ===================== -->
+<!-- Фоновые эффекты -->
+<!-- ===================== -->
+
+<div class="background">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
 </div>
-</nav>
-<header id="home">
-<div class="hero">
-<h1>Түлкібай Әліби Абайұлы</h1>
-<h2>IT-специалист • Преподаватель • Инженер • Проектный менеджер</h2>
+
+<!-- ===================== -->
+<!-- Меню -->
+<!-- ===================== -->
+<div id="loader">
+
+<div class="spinner"></div>
+
+</div>
+<header class="header">
+
+    <div class="logo">
+
+        <img src="image/logo.png" alt="Logo">
+
+    </div>
+
+    <nav class="navbar">
+
+        <a href="#home">Главная</a>
+        <a href="#about">Обо мне</a>
+        <a href="#experience">Опыт</a>
+        <a href="#skills">Навыки</a>
+        <a href="#portfolio">Портфолио</a>
+        <a href="#certificates">Сертификаты</a>
+        <a href="#contact">Контакты</a>
+
+    </nav>
+
+    <div class="language">
+
+        <button>РУС</button>
+        <button>ҚАЗ</button>
+
+    </div>
+
+</header>
+
+<!-- ===================== -->
+<!-- Hero -->
+<!-- ===================== -->
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<div class="hero-left">
+
+<span class="welcome">
+👋 Здравствуйте!
+</span>
+
+<h1>
+
+Түлкібай<br>
+Әліби<br>
+Абайұлы
+
+</h1>
+
+<h2>
+
+IT Project Manager
+
+<span>•</span>
+
+STEM Trainer
+
+<span>•</span>
+
+Engineer
+
+</h2>
 
 <p>
 
-Преподаватель программирования, робототехники, 3D-моделирования и специальных дисциплин.
-Специалист по оснащению образовательных учреждений, внедрению IT-решений и современных технологий обучения.
+Специалист по внедрению современных IT-решений,
+оснащению образовательных учреждений и управлению
+проектами полного цикла.
 
 </p>
 
-<a href="#about" class="btn">Подробнее обо мне</a>
+<div class="buttons">
+
+<a href="#" class="btn btn-blue">
+
+<i class="fa-solid fa-download"></i>
+
+Скачать CV
+
+</a>
+
+<a href="#contact" class="btn btn-dark">
+
+<i class="fa-regular fa-comment"></i>
+
+Связаться
+
+</a>
+
 </div>
-</header>
-<section id="about">
+
+</div>
+
+<div class="hero-right">
+
+<div class="photo-circle">
+
+<img src="image/photo.jpg" alt="Фото">
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ===================== -->
+<!-- Статистика -->
+<!-- ===================== -->
+
+<div class="statistics">
+
+<div class="stat-box">
+
+<i class="fa-solid fa-users"></i>
+
+<h3>1000+</h3>
+
+<p>Обучено преподавателей</p>
+
+</div>
+
+<div class="stat-box">
+
+<i class="fa-solid fa-school"></i>
+
+<h3>24</h3>
+
+<p>Комфортные школы</p>
+
+</div>
+
+<div class="stat-box">
+
+<i class="fa-solid fa-desktop"></i>
+
+<h3>100+</h3>
+
+<p>Оснащённых кабинетов</p>
+
+</div>
+
+<div class="stat-box">
+
+<i class="fa-solid fa-briefcase"></i>
+
+<h3>10+</h3>
+
+<p>Крупных проектов</p>
+
+</div>
+
+<div class="stat-box">
+
+<i class="fa-solid fa-chart-line"></i>
+
+<h3>1 млрд ₸</h3>
+
+<p>Самый крупный проект</p>
+
+</div>
+
+</div>
+
+<div class="scroll">
+
+<span>Прокрутите вниз</span>
+
+<i class="fa-solid fa-computer-mouse"></i>
+
+</div>
+
+</section>
+
+<!-- Следующие разделы будут добавлены позже -->
+
+<section class="about" id="about">
+
+<div class="container">
+
+<div class="section-title">
 
 <h2>Обо мне</h2>
-<div class="about">
+
+<p>IT Project Manager • STEM Trainer • Engineer</p>
+
+</div>
+
+<div class="about-wrapper">
+
+<div class="about-image">
+
 <img src="image/photo.jpg" alt="Фото">
-<div class="about-text">
+
+<div class="experience-card">
+
+<h3>10+</h3>
+
+<span>лет опыта</span>
+
+</div>
+
+</div>
+
+<div class="about-content">
+
+<h3>
+
+Түлкібай Әліби Абайұлы
+
+</h3>
+
 <p>
-Меня зовут <b>Түлкібай Әліби Абайұлы</b>. 
-<p>Гражданство: Республика Казахстан
-<p>Образование: Высшее (Магистр)
-<p>Дата рождения: 27.03.1996 г.
-<p>Пол: Мужской.
-<p>Наличие водительских прав (категории): Категория В
-<p> Языки: казахский (родной), русский (свободно).
-<p> Служба в армии: ВЧ 2177 г.Алматы №1500548, ДП Акмолинская область
-<p>Я — IT-специалист, STEM-тренер и проектный менеджер с опытом реализации образовательных и IT-проектов. Специализируюсь на внедрении современных технологий в образование, оснащении учебных кабинетов, обучении преподавателей и сопровождении проектов от идеи до ввода в эксплуатацию.
-<p>За свою карьеру обучил более 1000 педагогов, реализовал проекты по оснащению 24 «Комфортных школ», организовывал STEM-олимпиады и успешно завершил более 10 крупных проектов, включая проект стоимостью свыше 1 миллиарда тенге.
-<p>Сочетаю техническую экспертизу, управленческие навыки и практический опыт, помогая создавать современные образовательные пространства и эффективно внедрять инновационные решения.
+
+Я — IT-специалист, Project Manager и STEM-тренер с практическим опытом управления проектами,
+оснащения образовательных учреждений современным оборудованием и внедрения цифровых технологий.
+
 </p>
-<br>
+
+<p>
+
+За профессиональную карьеру обучил более 1000 педагогов,
+реализовал проекты по оснащению 24 «Комфортных школ»,
+руководил проектами стоимостью свыше 1 миллиарда тенге
+и успешно завершил более 10 крупных проектов.
+
+</p>
+
+<div class="info-grid">
+
+<div class="info-card">
+
+<h4>🎓 Образование</h4>
+
+<p>Магистр техники и технологий</p>
+
+</div>
+
+<div class="info-card">
+
+<h4>🌍 Страна</h4>
+
+<p>Республика Казахстан</p>
+
+</div>
+
+<div class="info-card">
+
+<h4>🚗 Водительские права</h4>
+
+<p>Категория B</p>
+
+</div>
+
+<div class="info-card">
+
+<h4>💬 Языки</h4>
+
+<p>Казахский, Русский</p>
+
+</div>
+
+<div class="info-card">
+
+<h4>💼 Специализация</h4>
+
+<p>Project Management</p>
+
+</div>
+
+<div class="info-card">
+
+<h4>🤖 Направление</h4>
+
+<p>STEM / IT / Engineering</p>
+</div>
+</div>
+</div>
 </div>
 </div>
 </section>
-<section id="education">
 
-<h2>Образование</h2>
+<section class="experience" id="experience">
 
-<div class="cards">
-<div class="card">
-<h3>🎓 Среднее специальное</h3>
-<p>
-Высший технический колледж г.Щучинск 2011-2014 №0454586
-</p>
-<br>
-<p>
-Степень:
-</p>
-<b>Радиоэлектроника и связь</b>
-</div>
+<div class="container">
 
-<div class="card">
-<h3>🎓 Бакалавриат</h3>
-<p>
-Университет путей и сообщения 2014-2017 №1026977
-</p>
-<br>
-<p>
-Специальность:
-</p>
-<b>Бакалавр техники и технологий</b>
-</div>
-<div class="card">
-<h3>🎓 Магистратура</h3>
-<p>
-Университет путей и сообщения г.Алматы 2017-2019 №0118306
-</p>
-<br>
-<p>
-Степень:
-</p>
-<b>Магистр техники и технологий</b>
-</div>
-<div class="card">
-<h3>📚 Дополнительное обучение</h3>
-<p>
-• Учитель информатики (переквалификация), Университет им. Ш. Уалиханова, 2021
-<br><br>
-• Повар 3 разряда, КИТИС, 2018 №0531995
-<br><br>
-• АО НЦПК ОРЛЕУ г.Кокшетау Учитель Робототехники 2022год.
-</p>
-</div>
-</div>
-</section>
-<section id="experience">
+<div class="section-title">
 
 <h2>Опыт работы</h2>
-<div class="experience-cards">
-<div class="card">
-<h4>Преподаватель специальных дисциплин</h4>
+
+<p>Мой профессиональный путь</p>
+
+</div>
+
+<div class="timeline">
+
+<!-- ========================= -->
+
+<div class="timeline-item">
+
+<div class="timeline-dot"></div>
+
+<div class="timeline-content">
+
+<span class="date">09.2016 — 12.2019</span>
+
+<h3>Преподаватель специальных дисциплин</h3>
+
 <h4>Высший технический колледж, г. Щучинск</h4>
-<h4> 09.2016 – 12.2019</h4>       
-<h5>Проводил теоретические и практические занятия по специальностям «Радиотехника и электроника», формируя у студентов профессиональные навыки работы с электронными устройствами, современным оборудованием и программным обеспечением.</h5>  
-<details class="details">
-    <summary>📋 Основные обязанности</summary>
-    <ul>
-        <li><h5>• Проведение практических занятий по радиотехнике, электронике и профильным специальным дисциплинам.</h5>
-<h5>• Обучение студентов основам программирования и развитию алгоритмического мышления.</h5>
-<h5>• Руководство учебной и производственной практикой студентов.</h5>
-<h5>• Контроль выполнения практических заданий и оценка уровня подготовки обучающихся.</h5>
-<h5>• Подготовка учебно-методических материалов и практических работ.</h5>
-<h5>• Консультирование студентов по выполнению курсовых и практических проектов.</h5>
-<h5>• Формирование профессиональных компетенций в соответствии с требованиями образовательных стандартов.</h5></li>
-    </ul>
-</details>
-</div>
-<div class="card">
 
-<h4>Преподаватель программирования, робототехники и 3D-моделирования</h4>
-<h4>IT BIL BURABAY 01.2021 – 08.2023</h4>
-<h5>Проводил обучение школьников современным цифровым и инженерным технологиям, развивая практические навыки программирования, конструирования и проектной деятельности.</h5>  
-<details class="details">
-    <summary>📋 Основные обязанности</summary>
-    <ul>
-        <li><h5>• Преподавание робототехники, программирования и 3D-моделирования.</h5> 
-<h5>• Обучение работе с платформами Arduino, LEGO Mindstorms EV3 и языком программирования Python.</h5> 
-<h5>• Разработка учебных программ, практических заданий и проектных работ.</h5> 
-<h5>• Подготовка учащихся к участию в STEM-проектах, конкурсах и олимпиадах.</h5> 
-<h5>• Формирование инженерного, алгоритмического и проектного мышления.</h5> 
-<h5>• Работа с современным STEM-оборудованием и технологиями цифрового производства.</h5> </li>
-    </ul>
-</details>
-</div>
-<div class="card">
-  
-<h4>Тренер по робототехнике</h4>
-<h4>АО «НЦПК «Өрлеу» 01.2021 – 08.2023 (по совместительству)</h4>
-<h5>Проводил курсы повышения квалификации для педагогов Акмолинской области по направлению «Робототехника», обучая использованию современных образовательных платформ и STEM-технологий.</h5>  
-<details class="details">
-    <summary>📋 Основные обязанности</summary>
-    <ul>
-        <li><h5>•  Проведение практических занятий и мастер-классов для учителей.</h5> 
-<h5>• Обучение программированию и работе с платформами Arduino и Raspberry Pi 4.</h5> 
-<h5>• Разработка практических кейсов и учебно-методических материалов.</h5> 
-<h5>• Консультирование педагогов по внедрению робототехники и программирования в образовательный процесс.</h5> 
-<h5>• Демонстрация современных подходов к преподаванию STEM-дисциплин.</h5> 
-<h5>• Методическое сопровождение слушателей курсов повышения квалификации.</h5> 
-<h4>Достижения:</h4>
-<h5>• Подготовил педагогов Акмолинской области к использованию робототехнических платформ в учебном процессе.</h5> 
-<h5>• Способствовал развитию STEM-компетенций и внедрению современных образовательных технологий в школах региона.</h5> </li>
-    </ul>
-</details>
-</div>
-<div class="card">
+<p>
 
-<h4>Project Manager</h4>
-<h4>STEM Academia 09.2023 – 03.2026</h4>
-<h5>Руководил проектами по комплексному оснащению образовательных учреждений мебелью, современным оборудованием, IT-инфраструктурой и STEM-лабораториями. Обеспечивал полный цикл реализации проектов — от планирования и координации работ до ввода объектов в эксплуатацию и передачи заказчику.</h5>  
-<details class="details">
-    <summary>📋 Основные обязанности</summary>
-    <ul>
-        <li><h5>• Руководил проектами по оснащению образовательных учреждений современным оборудованием.</h5> 
-<h5>• Организовывал ремонт и запуск специализированных учебных кабинетов под ключ.</h5> 
-<h5>• Координировал работу подрядчиков численностью до 15 человек.</h5> 
-<h5>• Проводил обучение педагогов работе с оборудованием и STEM-решениями.</h5> 
-<h5>• Реализовал 24 объекта в рамках программы «Комфортная школа».</h5> 
-<h5>• Успешно реализовал проект с бюджетом свыше 1 млрд тенге. </h5> </li>
-    </ul>
+Преподавание дисциплин «Радиотехника и электроника», проведение лабораторных и практических занятий, руководство производственной практикой студентов.
+
+</p>
+
+<details>
+
+<summary>Подробнее</summary>
+
+<ul>
+
+<li>Практические занятия по электронике.</li>
+
+<li>Программирование микроконтроллеров.</li>
+
+<li>Учебно-методические материалы.</li>
+
+<li>Подготовка студентов к практике.</li>
+
+</ul>
+
+</details>
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+
+<div class="timeline-item">
+
+<div class="timeline-dot"></div>
+
+<div class="timeline-content">
+
+<span class="date">01.2021 — 08.2023</span>
+
+<h3>Преподаватель робототехники</h3>
+
+<h4>IT BIL BURABAY</h4>
+
+<p>
+
+Обучение программированию, Arduino, LEGO EV3, Python, Scratch, 3D-моделированию.
+
+</p>
+
+<details>
+
+<summary>Подробнее</summary>
+
+<ul>
+
+<li>Python</li>
+
+<li>Scratch</li>
+
+<li>Arduino</li>
+
+<li>LEGO EV3</li>
+
+<li>Blender</li>
+
+<li>Подготовка к олимпиадам</li>
+
+</ul>
+
+</details>
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+
+<div class="timeline-item">
+
+<div class="timeline-dot"></div>
+
+<div class="timeline-content">
+
+<span class="date">2021 — 2023</span>
+
+<h3>STEM Trainer</h3>
+
+<h4>АО «Өрлеу»</h4>
+
+<p>
+
+Проведение курсов повышения квалификации педагогов по робототехнике и STEM.
+
+</p>
+
+<details>
+
+<summary>Подробнее</summary>
+
+<ul>
+
+<li>Более 1000 педагогов.</li>
+
+<li>Arduino.</li>
+
+<li>Raspberry Pi.</li>
+
+<li>STEM лаборатории.</li>
+
+</ul>
+
+</details>
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+
+<div class="timeline-item">
+
+<div class="timeline-dot"></div>
+
+<div class="timeline-content">
+
+<span class="date">09.2023 — 03.2026</span>
+
+<h3>Project Manager</h3>
+
+<h4>STEM Academia</h4>
+
+<p>
+
+Реализация проектов по оснащению школ современной мебелью, оборудованием и IT-инфраструктурой.
+
+</p>
+
+<details>
+
+<summary>Подробнее</summary>
+
+<ul>
+
+<li>24 Комфортные школы</li>
+
+<li>Проект свыше 1 млрд ₸</li>
+
+<li>Управление подрядчиками</li>
+
+<li>Пусконаладочные работы</li>
+
+</ul>
+
+</details>
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+
+<div class="timeline-item">
+
+<div class="timeline-dot"></div>
+
+<div class="timeline-content">
+
+<span class="date">11.2025 — настоящее время</span>
+
+<h3>Project Manager</h3>
+
+<h4>ТОО "Альянс Техносервис"</h4>
+
+<p>
+
+Управление проектами B2B/B2G, переговоры, внедрение IT-решений и сопровождение заказчиков.
+
+</p>
+
+<details>
+
+<summary>Подробнее</summary>
+
+<ul>
+
+<li>Consultative Selling</li>
+
+<li>Stakeholder Management</li>
+
+<li>Microsoft Teams</li>
+
+<li>Project Management</li>
+
+<li>B2B/B2G</li>
+</ul>
 </details>
 </div>
-<div class="card">
-  
-<h4>Project Manager</h4>
-<h4>ТОО «Альянс Техносервис» 11.2025 – по настоящее время</h4>
-<h5>• Управляю проектами по комплексному оснащению образовательных учреждений мебелью, оборудованием и IT-решениями. Отвечаю за взаимодействие с заказчиками, анализ потребностей, подготовку технических решений и сопровождение проектов на всех этапах реализации.</h5> 
-<details class="details">
-    <summary>📋 Основные обязанности</summary>
-    <ul>
-        <li><h5>• Управление проектами в сфере оснащения образовательных объектов. </h5> 
-<h5>• Экспертные продажи (Consultative Selling) в сегментах B2B и B2G. </h5> 
-<h5>• Проведение переговоров с заказчиками, подготовка коммерческих предложений и презентаций. </h5> 
-<h5>• Организация и проведение онлайн-встреч в Microsoft Teams и Zoom. </h5> 
-<h5>• Управление ожиданиями заказчиков и ключевых заинтересованных сторон (Stakeholder Management). </h5> 
-<h5>• Сбор, анализ и формализация требований заказчика, декомпозиция бизнес-задач в технические решения. </h5> 
-<h5>• Координация взаимодействия с техническими специалистами, поставщиками и подрядчиками. </h5> 
-<h5>• Подготовка технической и коммерческой документации, сопровождение закупочных процедур. </h5> 
-<h5>• Контроль сроков реализации проектов, качества выполнения работ и исполнения договорных обязательств.</h5>  </li>
-    </ul>
-</details>
 </div>
-<div class="card">
+</div>
+</div>
 </section>
 
-<section id="skills">
+<section class="skills-section" id="skills">
 
+<div class="container">
+
+<div class="section-title">
 <h2>Навыки</h2>
+<p>Профессиональные компетенции</p>
+</div>
 
-<div class="skills">
+<div class="skills-wrapper">
 
-<div class="skill">Project Management</div>
-<div class="skill">Планирование и контроль реализации проектов</div>
-<div class="skill">Управление сроками, бюджетом и ресурсами</div>
-<div class="skill">Координация работы команд и подрядчиков</div>
-<div class="skill">Управление рисками</div>
-<div class="skill">Работа с языками программирования Python, С++</div>
-<div class="skill">HTML/CSS</div>
-<div class="skill">Работа с набором Arduino, Raspbbery Pi</div>
-<div class="skill">Работа в программах Scratch, Skech Up, Blender</div>
-<div class="skill">Работа в программах AutoCad, CorelDrow</div>
-<div class="skill">Работа в Office программах</div>
-<div class="skill">Знание Компьютерныx сетeи</div>
-<div class="skill">Монтаж интерактивного оборудования</div>
-<div class="skill">Техническая поддержка ПО и Оборудовании</div>
-<div class="skill">Работа на стонках ЧПУ</div>
-<div class="skill">Проведение тренингов и семинаров</div>
-<div class="skill">Разработка учебных программ и практических занятий</div>
-<div class="skill">Проведение презентаций и публичных выступлений</div>
-<div class="skill">Обучение больших групп слушателей</div>
-<div class="skill">Работа в режиме многозадачности</div>
+<div class="skills-left">
 
+<div class="skill">
+
+<div class="skill-title">
+<span>Project Management</span>
+<span>95%</span>
+</div>
+
+<div class="progress">
+<div class="progress-bar" style="width:95%"></div>
+</div>
+
+</div>
+
+<div class="skill">
+
+<div class="skill-title">
+<span>Управление проектами</span>
+<span>95%</span>
+</div>
+
+<div class="progress">
+<div class="progress-bar" style="width:95%"></div>
+</div>
+
+</div>
+
+<div class="skill">
+
+<div class="skill-title">
+<span>HTML / CSS</span>
+<span>85%</span>
+</div>
+
+<div class="progress">
+<div class="progress-bar" style="width:85%"></div>
+</div>
+
+</div>
+
+<div class="skill">
+
+<div class="skill-title">
+<span>Python</span>
+<span>80%</span>
+</div>
+
+<div class="progress">
+<div class="progress-bar" style="width:80%"></div>
+</div>
+
+</div>
+
+<div class="skill">
+
+<div class="skill-title">
+<span>Arduino / Raspberry Pi</span>
+<span>90%</span>
+</div>
+
+<div class="progress">
+<div class="progress-bar" style="width:90%"></div>
+</div>
+
+</div>
+
+<div class="skill">
+
+<div class="skill-title">
+<span>STEM обучение</span>
+<span>100%</span>
+</div>
+
+<div class="progress">
+<div class="progress-bar" style="width:100%"></div>
+</div>
+
+</div>
+
+</div>
+
+<div class="skills-right">
+
+<div class="skill-card">
+<i class="fa-solid fa-diagram-project"></i>
+<h3>Project Manager</h3>
+<p>Управление проектами полного цикла.</p>
+</div>
+
+<div class="skill-card">
+<i class="fa-solid fa-laptop-code"></i>
+<h3>IT</h3>
+<p>Настройка оборудования, ПО и сетей.</p>
+</div>
+
+<div class="skill-card">
+<i class="fa-solid fa-robot"></i>
+<h3>STEM</h3>
+<p>Робототехника, Arduino, Raspberry Pi.</p>
+</div>
+
+<div class="skill-card">
+<i class="fa-solid fa-chalkboard-user"></i>
+<h3>Обучение</h3>
+<p>Подготовка преподавателей и проведение тренингов.</p>
+</div>
+
+<div class="skill-card">
+<i class="fa-solid fa-network-wired"></i>
+<h3>Инфраструктура</h3>
+<p>Оснащение школ современным оборудованием.</p>
+</div>
+
+<div class="skill-card">
+<i class="fa-solid fa-users-gear"></i>
+<h3>Leadership</h3>
+<p>Управление командами и подрядчиками.</p>
+</div>
+
+</div>
+
+</div>
 
 </div>
 
 </section>
 
-<section id="portfolio">
+<section class="portfolio-section" id="portfolio">
+
+<div class="container">
+
+<div class="section-title">
 
 <h2>Портфолио</h2>
-<div class="portfolio">
 
-<div class="project">
-<img src="image/project2.jpg">
-<div>
-<h3>Проектный менеджер ТОО «STEM Academia»</h3>
-<p>В должности проектного менеджера отвечал за комплексное сопровождение проектов по оснащению образовательных учреждений современным оборудованием, мебелью и IT-решениями. Координировал работу с заказчиками, поставщиками и подрядчиками, обеспечивая выполнение проектов в установленные сроки и в соответствии с техническими требованиями.
-<details class="details">
-    <summary>📋 Подробнее</summary>
-    <ul>
-        <li> Полное управление проектами на всех этапах реализации.
-<p>• Планирование сроков, ресурсов и бюджета проектов.
-<p>• Координация работы внутренних подразделений, поставщиков и подрядных организаций.
-<p>• Взаимодействие с заказчиками, согласование технических решений и контроль исполнения обязательств.
-<p>• Организация поставки, монтажа и ввода оборудования в эксплуатацию.
-<p>• Контроль качества выполнения работ и соблюдения проектной документации.
-<p>• Управление рисками и обеспечение своевременного завершения проектов.
-<h3>Ключевые достижения:</h3>
-<p>• Успешно реализовал проекты по оснащению 24 «Комфортных школ» современным оборудованием и IT-инфраструктурой.
-<p>• Завершил более 10 комплексных проектов по оснащению образовательных учреждений.
-<p>• Руководил реализацией проекта стоимостью свыше 1 миллиарда тенге, обеспечив его успешное выполнение в соответствии с требованиями заказчика.
-<p>• Обеспечивал эффективную коммуникацию между всеми участниками проекта, способствуя достижению поставленных целей в установленные сроки.
-</p>
-</li>
-</ul>
-</details>
+<p>Реализованные проекты</p>
+
 </div>
-</div>
-<div class="project">
-  
-<img src="image/SO1.jpg">
-<div>
-<h3>Организатор STEM-олимпиад и инженерных соревнований</h3>
-<p>Организовывал и координировал проведение STEM-олимпиад, инженерных соревнований и образовательных мероприятий, направленных на развитие технического творчества, робототехники, программирования и инженерного мышления среди школьников и студентов.
-<details class="details">
-    <summary>📋 Подробнее</summary>
-    <ul>
-        <li> • Полная организация и сопровождение STEM-олимпиад и соревнований.
-<p>• Подготовка конкурсных заданий, регламентов и технических площадок.
-<p>• Координация работы судейской коллегии, волонтеров и организаторов.
-<p>• Подготовка и настройка робототехнического и компьютерного оборудования.
-<p>• Взаимодействие с образовательными учреждениями, участниками и партнерами.
-<p>• Контроль проведения соревнований и техническое сопровождение всех этапов мероприятия.
-<h3>Достижения:</h3>
-<p>• Организовал городские и районные этапы STEM-олимпиад с участием более 200 школьников и студентов.
-<p>• Принимал участие в организации международных STEM-соревнований с участием команд из 5 стран, обеспечивая координацию, техническое сопровождение и проведение конкурсной программы.
-<p>• Способствовал популяризации STEM-образования, робототехники и инженерных дисциплин среди молодежи и педагогического сообщества.
-</li>
-</ul>
-</details>
-</p>
-</div>
-</div>
-<div class="project">
-  
-<img src="image/pusk.jpg">
-<div>
-<h3>Пуско-наладочные работы и внедрение IT-инфраструктуры</h3>
-<p>Обладаю практическим опытом ввода в эксплуатацию образовательных объектов, комплексной настройки IT-инфраструктуры и современного учебного оборудования. Выполнял полный цикл пуско-наладочных работ — от монтажа и конфигурирования оборудования до тестирования, сдачи объектов заказчику и обучения пользователей.
-<details class="details">
-    <summary>📋 Подробнее</summary>
-    <ul>
-        <li>• Реализовал пуско-наладочные работы и сдал более 100 учебных кабинетов «под ключ», включая STEM-лаборатории, IT-классы, кабинеты робототехники и мультимедийные аудитории.
-<p>• Ввел в эксплуатацию свыше 1000 единиц цифровой техники.
-<p>• Выполнил масштабное развертывание IT-инфраструктуры для образовательных учреждений в рамках государственных и коммерческих проектов.
-<h3>Профессиональные компетенции:</h3>
-<p>• Установка, настройка и лицензирование операционных систем Windows и Linux.
-<p>• Развертывание и настройка специализированного образовательного программного обеспечения: среды программирования, CAD/3D-приложения, робототехническое ПО, инженерные симуляторы и другие учебные комплексы.
-<p>• Пакетное развертывание операционных систем и программного обеспечения (Mass Deployment) на большие группы компьютеров.
-<p>• Настройка интерактивных панелей, проекторов, документ-камер, мультимедийных комплексов и периферийного оборудования.
-<p>• Администрирование операционных систем, настройка локальных сетей и сетевого оборудования.
-<p>• Проведение тестирования, контроля качества (QA), приемо-сдаточных испытаний и подготовки объектов к эксплуатации.
-<p>• Техническое сопровождение проектов, оперативное устранение неисправностей и обеспечение бесперебойной работы оборудования.
-<p>• Эффективное управление временем и выполнение проектов в условиях высокой нагрузки и сжатых сроков.
-</li>
-</ul>
-</details>
-</p>
-</div>
-</div>
-  
-<div class="project">
-<img src="image/project3.jpg">
-<div>
-<h3>STEM-тренер</h3>
+
+<div class="portfolio-grid">
+
+<!-- ===== Проект 1 ===== -->
+
+<div class="portfolio-card">
+
+<img src="image/project1.jpg" alt="STEM Academia">
+
+<div class="portfolio-content">
+
+<span class="portfolio-tag">Project Management</span>
+
+<h3>Оснащение 24 «Комфортных школ»</h3>
+
 <p>
-<p>• В качестве STEM-тренера я занимался обучением преподавателей работе с современным образовательным оборудованием и цифровыми технологиями, помогая внедрять инновационные решения в учебный процесс.
-<p>• За время работы провел десятки обучающих семинаров и практических занятий, подготовив более 1000 педагогов к эффективному использованию STEM-оборудования в школах, колледжах и образовательных центрах.</p>
-<details class="details">
-    <summary>📋 Подробнее</summary>
-    <ul>
-        <li> • Проведение очных и выездных обучений для педагогов.
-<p>• Обучение работе с 3D-принтерами: настройка, обслуживание, подготовка моделей и печать изделий.
-<p>• Работа с ЧПУ-станками: основы эксплуатации, техника безопасности и практическое применение.
-<p>• Обучение использованию интерактивных панелей, документ-камер и другого современного оборудования.
-<p>• Подготовка преподавателей к работе со специализированным программным обеспечением для 3D-моделирования, программирования и управления оборудованием.
-<p>• Консультирование по вопросам оснащения STEM-кабинетов и внедрения современных образовательных технологий.
-</li>
-</ul>
-</details>
+
+Полное сопровождение проектов по оснащению образовательных учреждений мебелью, IT-инфраструктурой и STEM-лабораториями.
+
 </p>
+
+<div class="portfolio-footer">
+
+<span>🏫 24 школы</span>
+
+<a href="#">Подробнее →</a>
+
 </div>
+
 </div>
-<div class="project">
-  
-<img src="image/OR.jpg">
-<div>
-<h3>АО «НЦПК «Өрлеу» — Центр курсов повышения квалификации педагогов</h3>
-<p> Работал тренером по робототехнике, проводя курсы повышения квалификации для педагогов организаций образования. Обучал преподавателей современным методикам преподавания робототехники и использованию STEM-технологий в образовательном процессе.</p>
-<details class="details">
-    <summary>📋 Подробнее</summary>
-    <ul>
-        <li> • Проведение курсов повышения квалификации для педагогов.
-<p>• Обучение основам робототехники, программирования и инженерного проектирования.
-<p>• Проведение практических занятий по сборке, настройке и программированию робототехнических платформ.
-<p>• Обучение работе с образовательными конструкторами, датчиками и исполнительными механизмами.
-<p>• Разработка учебно-методических материалов и практических заданий.
-<p>• Консультирование педагогов по внедрению робототехники и STEM-подхода в образовательный процесс.
-<p>• Оценка результатов обучения и сопровождение слушателей в ходе освоения программы.
-</li>
-</ul>
-</details>
+
+</div>
+
+<!-- ===== Проект 2 ===== -->
+
+<div class="portfolio-card">
+
+<img src="image/project2.jpg" alt="STEM">
+
+<div class="portfolio-content">
+
+<span class="portfolio-tag">STEM</span>
+
+<h3>Обучение преподавателей</h3>
+
+<p>
+
+Подготовка более 1000 педагогов работе с робототехникой, Arduino, Raspberry Pi и современным оборудованием.
+
 </p>
+
+<div class="portfolio-footer">
+
+<span>👨‍🏫 1000+</span>
+
+<a href="#">Подробнее →</a>
+
 </div>
+
 </div>
-<div class="project">
-  
-<img src="image/robo.jpg">
-<div>
-<h3>Преподаватель программирования, робототехники и 3D-моделирования IT BIL School</h3>
-<p>Работал преподавателем программирования, робототехники и 3D-моделирования, обучая школьников современным цифровым и инженерным технологиям. Разрабатывал и проводил практические занятия, направленные на развитие логического мышления, алгоритмических навыков и инженерного подхода к решению задач.
-<details class="details">
-    <summary>📋 Подробнее</summary>
-    <ul>
-        <li> • Проведение занятий по программированию для учащихся разных возрастных групп.
-<p>• Обучение основам робототехники: сборка, настройка и программирование робототехнических систем.
-<p>• Преподавание 3D-моделирования и подготовка моделей к 3D-печати.
-<p>• Организация практических и проектных работ с использованием современного STEM-оборудования.
-<p>• Подготовка учеников к конкурсам, выставкам и проектной деятельности.
-<p>• Индивидуальное сопровождение учащихся и развитие их технических навыков.
-<p>• Оценка знаний, контроль выполнения практических заданий и ведение учебной документации.
-</li>
-</ul>
-</details>
+
+</div>
+
+<!-- ===== Проект 3 ===== -->
+
+<div class="portfolio-card">
+
+<img src="image/project3.jpg" alt="IT">
+
+<div class="portfolio-content">
+
+<span class="portfolio-tag">Infrastructure</span>
+
+<h3>Внедрение IT-инфраструктуры</h3>
+
+<p>
+
+Пусконаладочные работы, монтаж оборудования, настройка программного обеспечения и обучение персонала.
+
 </p>
+
+<div class="portfolio-footer">
+
+<span>💻 100+ кабинетов</span>
+
+<a href="#">Подробнее →</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ===== Проект 4 ===== -->
+
+<div class="portfolio-card">
+
+<img src="image/project4.jpg" alt="Olympiad">
+
+<div class="portfolio-content">
+
+<span class="portfolio-tag">STEM Events</span>
+
+<h3>STEM Олимпиады</h3>
+
+<p>
+
+Организация инженерных соревнований и международных STEM-мероприятий.
+
+</p>
+
+<div class="portfolio-footer">
+
+<span>🌍 Международные</span>
+
+<a href="#">Подробнее →</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="certificates-section" id="certificates">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Сертификаты и дипломы</h2>
+
+<p>Образование, курсы повышения квалификации и профессиональные достижения</p>
+
+</div>
+
+<div class="certificate-grid">
+
+<div class="certificate-card">
+
+<img src="image/certificate1.jpg" alt="Сертификат">
+
+<div class="certificate-info">
+
+<h3>Сертификаты</h3>
+
+<p>Курсы, повышение квалификации, STEM, робототехника.</p>
+
+<a href="cert/sert1.pdf" target="_blank" class="certificate-btn">
+Открыть PDF
+</a>
+
+</div>
+
+</div>
+
+<div class="certificate-card">
+
+<img src="image/diploma1.jpg" alt="Диплом">
+
+<div class="certificate-info">
+
+<h3>Дипломы</h3>
+
+<p>Высшее образование, магистратура и дополнительные специальности.</p>
+
+<a href="diploma/diplom.pdf" target="_blank" class="certificate-btn">
+Открыть PDF
+</a>
+
+</div>
+
+</div>
+
+<div class="certificate-card">
+
+<img src="image/award.jpg" alt="Награды">
+
+<div class="certificate-info">
+
+<h3>Благодарственные письма</h3>
+
+<p>Достижения в образовательной деятельности и проектной работе.</p>
+
+<a href="#" class="certificate-btn">
+Подробнее
+</a>
+</div>
 </div>
 </div>
 </div>
 </section>
     
-<section id="certificates">
-<h2>🏆 Сертификаты</h2>
-<div class="cards">
-<div class="card">
-<h3>Сертификаты</h3>
-<p>Сертификаты учащихся и мои</p>
-<br>
-<a href="sert/sert1.pdf" target="_blank" class="btn">
-Открыть PDF
-</a>
+<section class="contact-section" id="contact">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Связаться со мной</h2>
+
+<p>Открыт для сотрудничества, новых проектов и интересных предложений</p>
+
 </div>
-<div class="card">
-<h3>Диплом</h3>
-<p>Мои дипломы</p>
-<br>
-<a href="dip/dip2.pdf" target="_blank" class="btn">
-Открыть PDF
-</a>
+
+<div class="contact-wrapper">
+
+<div class="contact-info">
+
+<div class="contact-card">
+
+<i class="fa-solid fa-phone"></i>
+
+<div>
+
+<h3>Телефон</h3>
+
+<p>+7 707 856 89 48</p>
+
 </div>
-</section>
-  
-<div class="contact">
-<h3>Контакты</h3>
-<br>
-<p>
-📱 WhatsApp:
-<a href="https://wa.me/77078568948" target="_blank">
-+7 707 856 89 48
-</a>
-</p>
 
-<p>
-📱 iMessage:
-<a>
-allliba@icloud.com
-</a>
-</p>
+</div>
 
-<p>
-📧 Почта:
-<a href="mailto:allliba@mail.ru">
-allliba@mail.ru
-</a>
-</p>
+<div class="contact-card">
 
-<p>
-💻 Сайт:
-<a href="https://alibi0327.github.io" target="_blank">
-alibi0327.github.io
-</a>
-</p>
+<i class="fa-solid fa-envelope"></i>
 
-<p>
-📍Адрес: Казахстан, Алматы
-</p>
+<div>
+
+<h3>Email</h3>
+
+<p>allliba@mail.ru</p>
+
+</div>
+
+</div>
+
+<div class="contact-card">
+
+<i class="fa-brands fa-whatsapp"></i>
+
+<div>
+
+<h3>WhatsApp</h3>
+
+<p>Написать в WhatsApp</p>
+
+</div>
+
+</div>
+
+<div class="contact-card">
+
+<i class="fa-solid fa-location-dot"></i>
+
+<div>
+
+<h3>Адрес</h3>
+
+<p>Алматы, Казахстан</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="contact-form">
+
+<form>
+
+<input type="text" placeholder="Ваше имя">
+
+<input type="email" placeholder="Ваш Email">
+
+<input type="text" placeholder="Тема">
+
+<textarea rows="6" placeholder="Ваше сообщение"></textarea>
+
+<button type="submit">
+
+Отправить сообщение
+
+</button>
+
+</form>
+
+</div>
+
+</div>
 
 </div>
 
 </section>
 
 <footer>
-© 2026 Әліби Түлкібай | Все права защищены
+
+<div class="footer-content">
+
+<h2>Түлкібай Әліби Абайұлы</h2>
+
+<p>
+
+Project Manager • STEM Trainer • IT Engineer
+
+</p>
+
+<div class="footer-social">
+
+<a href="#"><i class="fa-brands fa-github"></i></a>
+
+<a href="#"><i class="fa-brands fa-linkedin"></i></a>
+
+<a href="mailto:allliba@mail.ru"><i class="fa-solid fa-envelope"></i></a>
+
+<a href="https://wa.me/77078568948"><i class="fa-brands fa-whatsapp"></i></a>
+
+</div>
+
+<hr>
+
+<p>
+
+© 2026 Все права защищены.
+
+</p>
+
+</div>
+
 </footer>
+<script src="script.js"></script>
+<button id="toTop">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
 </body>
 </html>
+
