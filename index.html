@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
 
 <meta charset="UTF-8">
@@ -7,12 +8,17 @@
 
 <title>Түлкібай Әліби Абайұлы | Portfolio</title>
 
+<meta name="description" content="Портфолио Project Manager, STEM Trainer и IT Engineer">
+<meta name="keywords" content="Project Manager, STEM, IT, Portfolio">
+
+<link rel="icon" href="image/logo.png">
+
 <link rel="stylesheet" href="style.css">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
@@ -21,111 +27,94 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
 
 <body>
 
-<!-- ===================== -->
-<!-- Фоновые эффекты -->
-<!-- ===================== -->
+<!--========== HEADER ==========-->
 
-<div class="background">
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
+<header>
+
+<div class="container nav">
+
+<a href="#" class="logo">
+
+<img src="image/logo.png" alt="Logo">
+
+</a>
+
+<nav>
+
+<ul>
+
+<li><a href="#home">Главная</a></li>
+
+<li><a href="#about">Обо мне</a></li>
+
+<li><a href="#experience">Опыт</a></li>
+
+<li><a href="#skills">Навыки</a></li>
+
+<li><a href="#portfolio">Проекты</a></li>
+
+<li><a href="#certificates">Сертификаты</a></li>
+
+<li><a href="#contact">Контакты</a></li>
+
+</ul>
+
+</nav>
+
+<div class="menu-btn">
+
+<i class="fa-solid fa-bars"></i>
+
 </div>
 
-<!-- ===================== -->
-<!-- Меню -->
-<!-- ===================== -->
-<div id="loader">
-
-<div class="spinner"></div>
-
 </div>
-<header class="header">
-
-    <div class="logo">
-
-        <img src="image/logo.png" alt="Logo">
-
-    </div>
-
-    <nav class="navbar">
-
-        <a href="#home">Главная</a>
-        <a href="#about">Обо мне</a>
-        <a href="#experience">Опыт</a>
-        <a href="#skills">Навыки</a>
-        <a href="#portfolio">Портфолио</a>
-        <a href="#certificates">Сертификаты</a>
-        <a href="#contact">Контакты</a>
-
-    </nav>
-
-    <div class="language">
-
-        <button>РУС</button>
-        <button>ҚАЗ</button>
-
-    </div>
 
 </header>
 
-<!-- ===================== -->
-<!-- Hero -->
-<!-- ===================== -->
+<!--========== HERO ==========-->
 
 <section class="hero" id="home">
 
-<div class="hero-content">
+<div class="container hero-grid">
 
-<div class="hero-left">
+<div class="hero-text">
 
-<span class="welcome">
-👋 Здравствуйте!
-</span>
+<div class="badge">
+
+Project Manager
+
+</div>
 
 <h1>
 
 Түлкібай<br>
+
 Әліби<br>
+
 Абайұлы
 
 </h1>
 
-<h2>
-
-IT Project Manager
-
-<span>•</span>
-
-STEM Trainer
-
-<span>•</span>
-
-Engineer
-
-</h2>
+<h2 id="typing"></h2>
 
 <p>
 
-Специалист по внедрению современных IT-решений,
-оснащению образовательных учреждений и управлению
-проектами полного цикла.
+Специалист по управлению проектами,
+внедрению IT-решений,
+оснащению образовательных учреждений
+и обучению STEM-технологиям.
 
 </p>
 
-<div class="buttons">
+<div class="hero-buttons">
 
-<a href="#" class="btn btn-blue">
-
-<i class="fa-solid fa-download"></i>
+<a href="#" class="btn blue">
 
 Скачать CV
 
 </a>
 
-<a href="#contact" class="btn btn-dark">
-
-<i class="fa-regular fa-comment"></i>
+<a href="#contact" class="btn">
 
 Связаться
 
@@ -133,11 +122,47 @@ Engineer
 
 </div>
 
+<div class="stats">
+
+<div>
+
+<h3>10+</h3>
+
+<span>лет опыта</span>
+
 </div>
 
-<div class="hero-right">
+<div>
 
-<div class="photo-circle">
+<h3>24</h3>
+
+<span>Комфортные школы</span>
+
+</div>
+
+<div>
+
+<h3>1000+</h3>
+
+<span>Педагогов обучено</span>
+
+</div>
+
+<div>
+
+<h3>100+</h3>
+
+<span>Кабинетов</span>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="hero-image">
+
+<div class="circle">
 
 <img src="image/photo.jpg" alt="Фото">
 
@@ -147,77 +172,11 @@ Engineer
 
 </div>
 
-<!-- ===================== -->
-<!-- Статистика -->
-<!-- ===================== -->
-
-<div class="statistics">
-
-<div class="stat-box">
-
-<i class="fa-solid fa-users"></i>
-
-<h3>1000+</h3>
-
-<p>Обучено преподавателей</p>
-
-</div>
-
-<div class="stat-box">
-
-<i class="fa-solid fa-school"></i>
-
-<h3>24</h3>
-
-<p>Комфортные школы</p>
-
-</div>
-
-<div class="stat-box">
-
-<i class="fa-solid fa-desktop"></i>
-
-<h3>100+</h3>
-
-<p>Оснащённых кабинетов</p>
-
-</div>
-
-<div class="stat-box">
-
-<i class="fa-solid fa-briefcase"></i>
-
-<h3>10+</h3>
-
-<p>Крупных проектов</p>
-
-</div>
-
-<div class="stat-box">
-
-<i class="fa-solid fa-chart-line"></i>
-
-<h3>1 млрд ₸</h3>
-
-<p>Самый крупный проект</p>
-
-</div>
-
-</div>
-
-<div class="scroll">
-
-<span>Прокрутите вниз</span>
-
-<i class="fa-solid fa-computer-mouse"></i>
-
-</div>
-
 </section>
 
-<!-- Следующие разделы будут добавлены позже -->
+<!--========== ABOUT ==========-->
 
-<section class="about" id="about">
+<section id="about">
 
 <div class="container">
 
@@ -225,21 +184,21 @@ Engineer
 
 <h2>Обо мне</h2>
 
-<p>IT Project Manager • STEM Trainer • Engineer</p>
+<p>Project Manager • STEM Trainer • IT Engineer</p>
 
 </div>
 
-<div class="about-wrapper">
+<div class="about-grid">
 
-<div class="about-image">
+<div class="about-photo">
 
-<img src="image/photo.jpg" alt="Фото">
+<img src="image/photo.jpg" alt="Түлкібай Әліби">
 
-<div class="experience-card">
+<div class="about-card">
 
 <h3>10+</h3>
 
-<span>лет опыта</span>
+<span>лет профессионального опыта</span>
 
 </div>
 
@@ -249,81 +208,130 @@ Engineer
 
 <h3>
 
-Түлкібай Әліби Абайұлы
+Здравствуйте! Меня зовут Түлкібай Әліби Абайұлы
 
 </h3>
 
 <p>
 
-Я — IT-специалист, Project Manager и STEM-тренер с практическим опытом управления проектами,
-оснащения образовательных учреждений современным оборудованием и внедрения цифровых технологий.
+Я специалист в области управления проектами, внедрения IT-решений,
+оснащения образовательных учреждений и развития STEM-образования.
+Имею более 10 лет опыта в сфере образования, инженерии,
+информационных технологий и управления проектами.
 
 </p>
 
 <p>
 
-За профессиональную карьеру обучил более 1000 педагогов,
-реализовал проекты по оснащению 24 «Комфортных школ»,
-руководил проектами стоимостью свыше 1 миллиарда тенге
-и успешно завершил более 10 крупных проектов.
+Работал преподавателем, инженером, руководителем проектов,
+бизнес-консультантом и экспертом по оснащению образовательных организаций.
+Участвовал в реализации государственных и коммерческих проектов,
+включая оснащение школ, колледжей и учебных центров современным оборудованием.
+
+</p>
+
+<p>
+
+Основные компетенции включают управление проектами,
+работу с государственными закупками,
+B2B/B2G продажи,
+организацию команд,
+обучение преподавателей,
+внедрение STEM-лабораторий
+и сопровождение проектов полного цикла.
 
 </p>
 
 <div class="info-grid">
 
-<div class="info-card">
+<div class="info-box">
 
-<h4>🎓 Образование</h4>
+<h4>
 
-<p>Магистр техники и технологий</p>
+🎓 Образование
 
-</div>
+</h4>
 
-<div class="info-card">
+<p>
 
-<h4>🌍 Страна</h4>
+Высшее техническое образование.
+Магистр технических наук.
 
-<p>Республика Казахстан</p>
-
-</div>
-
-<div class="info-card">
-
-<h4>🚗 Водительские права</h4>
-
-<p>Категория B</p>
+</p>
 
 </div>
 
-<div class="info-card">
+<div class="info-box">
 
-<h4>💬 Языки</h4>
+<h4>
 
-<p>Казахский, Русский</p>
+💼 Опыт
+
+</h4>
+
+<p>
+
+Project Management,
+IT,
+образование,
+STEM,
+инженерия.
+
+</p>
 
 </div>
 
-<div class="info-card">
+<div class="info-box">
 
-<h4>💼 Специализация</h4>
+<h4>
 
-<p>Project Management</p>
+🌍 Проекты
+
+</h4>
+
+<p>
+
+Оснащение школ,
+колледжей,
+STEM-центров
+и образовательных лабораторий.
+
+</p>
 
 </div>
 
-<div class="info-card">
+<div class="info-box">
 
-<h4>🤖 Направление</h4>
+<h4>
 
-<p>STEM / IT / Engineering</p>
+🚀 Специализация
+
+</h4>
+
+<p>
+
+Project Management,
+Consultative Selling,
+Business Analysis,
+Stakeholder Management,
+Agile.
+
+</p>
+
 </div>
+
 </div>
+
 </div>
+
 </div>
+
 </div>
+
 </section>
+<!--========== EXPERIENCE ==========-->
 
-<section class="experience" id="experience">
+<section id="experience">
 
 <div class="container">
 
@@ -331,13 +339,13 @@ Engineer
 
 <h2>Опыт работы</h2>
 
-<p>Мой профессиональный путь</p>
+<p>Более 10 лет профессиональной деятельности в сфере образования, IT и управления проектами</p>
 
 </div>
 
 <div class="timeline">
 
-<!-- ========================= -->
+<!-- Работа 1 -->
 
 <div class="timeline-item">
 
@@ -345,7 +353,135 @@ Engineer
 
 <div class="timeline-content">
 
-<span class="date">09.2016 — 12.2019</span>
+<span class="date">11.2025 — настоящее время</span>
+
+<h3>Project Manager</h3>
+
+<h4>ТОО «Альянс Техносервис»</h4>
+
+<p>
+
+Управление проектами по оснащению образовательных учреждений современным оборудованием, IT-инфраструктурой и STEM-лабораториями.
+
+</p>
+
+<details>
+
+<summary>Основные достижения</summary>
+
+<ul>
+
+<li>Управление проектами стоимостью более 1 млрд ₸.</li>
+
+<li>Оснащение 24 «Комфортных школ» современным оборудованием.</li>
+
+<li>Ведение переговоров с государственными заказчиками.</li>
+
+<li>Подготовка коммерческих предложений и технических решений.</li>
+
+<li>Координация подрядчиков и контроль исполнения проектов.</li>
+
+</ul>
+
+</details>
+
+</div>
+
+</div>
+
+<!-- Работа 2 -->
+
+<div class="timeline-item">
+
+<div class="timeline-dot"></div>
+
+<div class="timeline-content">
+
+<span class="date">2022 — 2025</span>
+
+<h3>STEM Trainer / Бизнес-консультант</h3>
+
+<h4>STEM Academia</h4>
+
+<p>
+
+Обучение преподавателей современным образовательным технологиям, проведение семинаров, внедрение STEM-решений и сопровождение проектов.
+
+</p>
+
+<details>
+
+<summary>Основные достижения</summary>
+
+<ul>
+
+<li>Обучено более 1000 преподавателей.</li>
+
+<li>Проведено более 150 семинаров и мастер-классов.</li>
+
+<li>Внедрение робототехники, Arduino и STEM-лабораторий.</li>
+
+<li>Консультирование образовательных организаций.</li>
+
+</ul>
+
+</details>
+
+</div>
+
+</div>
+
+<!-- Работа 3 -->
+
+<div class="timeline-item">
+
+<div class="timeline-dot"></div>
+
+<div class="timeline-content">
+
+<span class="date">2019 — 2022</span>
+
+<h3>Преподаватель IT-дисциплин</h3>
+
+<h4>Общеобразовательная школа</h4>
+
+<p>
+
+Преподавание программирования, робототехники, 3D-моделирования и цифровых технологий.
+
+</p>
+
+<details>
+
+<summary>Основные достижения</summary>
+
+<ul>
+
+<li>Подготовка учащихся к олимпиадам.</li>
+
+<li>Организация кружков робототехники.</li>
+
+<li>Создание STEM-проектов.</li>
+
+<li>Обучение работе с Arduino и 3D-принтерами.</li>
+
+</ul>
+
+</details>
+
+</div>
+
+</div>
+
+<!-- Работа 4 -->
+
+<div class="timeline-item">
+
+<div class="timeline-dot"></div>
+
+<div class="timeline-content">
+
+<span class="date">2016 — 2019</span>
 
 <h3>Преподаватель специальных дисциплин</h3>
 
@@ -359,17 +495,17 @@ Engineer
 
 <details>
 
-<summary>Подробнее</summary>
+<summary>Основные достижения</summary>
 
 <ul>
 
-<li>Практические занятия по электронике.</li>
+<li>Подготовка студентов к производственной практике.</li>
 
-<li>Программирование микроконтроллеров.</li>
+<li>Разработка учебно-методических материалов.</li>
 
-<li>Учебно-методические материалы.</li>
+<li>Проведение лабораторных работ.</li>
 
-<li>Подготовка студентов к практике.</li>
+<li>Организация дипломного проектирования.</li>
 
 </ul>
 
@@ -379,201 +515,45 @@ Engineer
 
 </div>
 
-<!-- ========================= -->
-
-<div class="timeline-item">
-
-<div class="timeline-dot"></div>
-
-<div class="timeline-content">
-
-<span class="date">01.2021 — 08.2023</span>
-
-<h3>Преподаватель робототехники</h3>
-
-<h4>IT BIL BURABAY</h4>
-
-<p>
-
-Обучение программированию, Arduino, LEGO EV3, Python, Scratch, 3D-моделированию.
-
-</p>
-
-<details>
-
-<summary>Подробнее</summary>
-
-<ul>
-
-<li>Python</li>
-
-<li>Scratch</li>
-
-<li>Arduino</li>
-
-<li>LEGO EV3</li>
-
-<li>Blender</li>
-
-<li>Подготовка к олимпиадам</li>
-
-</ul>
-
-</details>
-
 </div>
 
 </div>
 
-<!-- ========================= -->
-
-<div class="timeline-item">
-
-<div class="timeline-dot"></div>
-
-<div class="timeline-content">
-
-<span class="date">2021 — 2023</span>
-
-<h3>STEM Trainer</h3>
-
-<h4>АО «Өрлеу»</h4>
-
-<p>
-
-Проведение курсов повышения квалификации педагогов по робототехнике и STEM.
-
-</p>
-
-<details>
-
-<summary>Подробнее</summary>
-
-<ul>
-
-<li>Более 1000 педагогов.</li>
-
-<li>Arduino.</li>
-
-<li>Raspberry Pi.</li>
-
-<li>STEM лаборатории.</li>
-
-</ul>
-
-</details>
-
-</div>
-
-</div>
-
-<!-- ========================= -->
-
-<div class="timeline-item">
-
-<div class="timeline-dot"></div>
-
-<div class="timeline-content">
-
-<span class="date">09.2023 — 03.2026</span>
-
-<h3>Project Manager</h3>
-
-<h4>STEM Academia</h4>
-
-<p>
-
-Реализация проектов по оснащению школ современной мебелью, оборудованием и IT-инфраструктурой.
-
-</p>
-
-<details>
-
-<summary>Подробнее</summary>
-
-<ul>
-
-<li>24 Комфортные школы</li>
-
-<li>Проект свыше 1 млрд ₸</li>
-
-<li>Управление подрядчиками</li>
-
-<li>Пусконаладочные работы</li>
-
-</ul>
-
-</details>
-
-</div>
-
-</div>
-
-<!-- ========================= -->
-
-<div class="timeline-item">
-
-<div class="timeline-dot"></div>
-
-<div class="timeline-content">
-
-<span class="date">11.2025 — настоящее время</span>
-
-<h3>Project Manager</h3>
-
-<h4>ТОО "Альянс Техносервис"</h4>
-
-<p>
-
-Управление проектами B2B/B2G, переговоры, внедрение IT-решений и сопровождение заказчиков.
-
-</p>
-
-<details>
-
-<summary>Подробнее</summary>
-
-<ul>
-
-<li>Consultative Selling</li>
-
-<li>Stakeholder Management</li>
-
-<li>Microsoft Teams</li>
-
-<li>Project Management</li>
-
-<li>B2B/B2G</li>
-</ul>
-</details>
-</div>
-</div>
-</div>
-</div>
 </section>
+<!--========== SKILLS ==========-->
 
-<section class="skills-section" id="skills">
+<section id="skills">
 
 <div class="container">
 
 <div class="section-title">
-<h2>Навыки</h2>
-<p>Профессиональные компетенции</p>
+
+<h2>Профессиональные навыки</h2>
+
+<p>Ключевые компетенции, технологии и инструменты</p>
+
 </div>
 
-<div class="skills-wrapper">
+<div class="skills-grid">
 
-<div class="skills-left">
+<!-- ЛЕВАЯ КОЛОНКА -->
+
+<div>
 
 <div class="skill">
 
 <div class="skill-title">
+
 <span>Project Management</span>
+
 <span>95%</span>
+
 </div>
 
 <div class="progress">
-<div class="progress-bar" style="width:95%"></div>
+
+<span style="width:95%"></span>
+
 </div>
 
 </div>
@@ -581,12 +561,17 @@ Engineer
 <div class="skill">
 
 <div class="skill-title">
-<span>Управление проектами</span>
-<span>95%</span>
+
+<span>Stakeholder Management</span>
+
+<span>92%</span>
+
 </div>
 
 <div class="progress">
-<div class="progress-bar" style="width:95%"></div>
+
+<span style="width:92%"></span>
+
 </div>
 
 </div>
@@ -594,38 +579,17 @@ Engineer
 <div class="skill">
 
 <div class="skill-title">
-<span>HTML / CSS</span>
-<span>85%</span>
-</div>
 
-<div class="progress">
-<div class="progress-bar" style="width:85%"></div>
-</div>
+<span>Consultative Selling (B2B / B2G)</span>
 
-</div>
-
-<div class="skill">
-
-<div class="skill-title">
-<span>Python</span>
-<span>80%</span>
-</div>
-
-<div class="progress">
-<div class="progress-bar" style="width:80%"></div>
-</div>
-
-</div>
-
-<div class="skill">
-
-<div class="skill-title">
-<span>Arduino / Raspberry Pi</span>
 <span>90%</span>
+
 </div>
 
 <div class="progress">
-<div class="progress-bar" style="width:90%"></div>
+
+<span style="width:90%"></span>
+
 </div>
 
 </div>
@@ -633,55 +597,186 @@ Engineer
 <div class="skill">
 
 <div class="skill-title">
-<span>STEM обучение</span>
-<span>100%</span>
+
+<span>Business Analysis</span>
+
+<span>88%</span>
+
 </div>
 
 <div class="progress">
-<div class="progress-bar" style="width:100%"></div>
-</div>
+
+<span style="width:88%"></span>
 
 </div>
 
 </div>
 
-<div class="skills-right">
+<div class="skill">
+
+<div class="skill-title">
+
+<span>Agile / Scrum</span>
+
+<span>85%</span>
+
+</div>
+
+<div class="progress">
+
+<span style="width:85%"></span>
+
+</div>
+
+</div>
+
+<div class="skill">
+
+<div class="skill-title">
+
+<span>MS Office / Google Workspace</span>
+
+<span>95%</span>
+
+</div>
+
+<div class="progress">
+
+<span style="width:95%"></span>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ПРАВАЯ КОЛОНКА -->
+
+<div class="skill-cards">
 
 <div class="skill-card">
+
 <i class="fa-solid fa-diagram-project"></i>
-<h3>Project Manager</h3>
-<p>Управление проектами полного цикла.</p>
+
+<h3>Project Management</h3>
+
+<p>
+
+Планирование, управление бюджетом, контроль сроков, управление рисками и реализация проектов полного цикла.
+
+</p>
+
 </div>
 
 <div class="skill-card">
-<i class="fa-solid fa-laptop-code"></i>
-<h3>IT</h3>
-<p>Настройка оборудования, ПО и сетей.</p>
-</div>
 
-<div class="skill-card">
-<i class="fa-solid fa-robot"></i>
-<h3>STEM</h3>
-<p>Робототехника, Arduino, Raspberry Pi.</p>
-</div>
+<i class="fa-solid fa-users"></i>
 
-<div class="skill-card">
-<i class="fa-solid fa-chalkboard-user"></i>
-<h3>Обучение</h3>
-<p>Подготовка преподавателей и проведение тренингов.</p>
-</div>
-
-<div class="skill-card">
-<i class="fa-solid fa-network-wired"></i>
-<h3>Инфраструктура</h3>
-<p>Оснащение школ современным оборудованием.</p>
-</div>
-
-<div class="skill-card">
-<i class="fa-solid fa-users-gear"></i>
 <h3>Leadership</h3>
-<p>Управление командами и подрядчиками.</p>
+
+<p>
+
+Управление командами, постановка задач, проведение совещаний и координация участников проекта.
+
+</p>
+
 </div>
+
+<div class="skill-card">
+
+<i class="fa-solid fa-laptop-code"></i>
+
+<h3>IT & STEM</h3>
+
+<p>
+
+Оснащение кабинетов, внедрение STEM-лабораторий, робототехника, Arduino, Raspberry Pi, 3D-печать.
+
+</p>
+
+</div>
+
+<div class="skill-card">
+
+<i class="fa-solid fa-chart-line"></i>
+
+<h3>Business</h3>
+
+<p>
+
+Подготовка коммерческих предложений, презентаций, переговоры, B2B/B2G продажи и сопровождение клиентов.
+
+</p>
+
+</div>
+
+<div class="skill-card">
+
+<i class="fa-solid fa-network-wired"></i>
+
+<h3>Infrastructure</h3>
+
+<p>
+
+Проектирование IT-инфраструктуры, подбор оборудования, внедрение и техническое сопровождение.
+
+</p>
+
+</div>
+
+<div class="skill-card">
+
+<i class="fa-solid fa-graduation-cap"></i>
+
+<h3>Education</h3>
+
+<p>
+
+Обучение преподавателей, проведение семинаров, разработка учебных программ и методических материалов.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ДОПОЛНИТЕЛЬНЫЕ ТЕХНОЛОГИИ -->
+
+<div style="margin-top:80px;">
+
+<h3 style="text-align:center;margin-bottom:35px;font-size:34px;">
+
+Технологии и инструменты
+
+</h3>
+
+<div class="skill-cards">
+
+<div class="skill-card"><h3>Microsoft Project</h3></div>
+
+<div class="skill-card"><h3>Jira</h3></div>
+
+<div class="skill-card"><h3>Trello</h3></div>
+
+<div class="skill-card"><h3>Notion</h3></div>
+
+<div class="skill-card"><h3>MS Office</h3></div>
+
+<div class="skill-card"><h3>Google Workspace</h3></div>
+
+<div class="skill-card"><h3>Arduino</h3></div>
+
+<div class="skill-card"><h3>Raspberry Pi</h3></div>
+
+<div class="skill-card"><h3>Python</h3></div>
+
+<div class="skill-card"><h3>HTML / CSS</h3></div>
+
+<div class="skill-card"><h3>GitHub</h3></div>
+
+<div class="skill-card"><h3>Figma</h3></div>
 
 </div>
 
@@ -690,8 +785,9 @@ Engineer
 </div>
 
 </section>
+<!--========== PORTFOLIO ==========-->
 
-<section class="portfolio-section" id="portfolio">
+<section id="portfolio">
 
 <div class="container">
 
@@ -699,7 +795,7 @@ Engineer
 
 <h2>Портфолио</h2>
 
-<p>Реализованные проекты</p>
+<p>Ключевые проекты и профессиональные достижения</p>
 
 </div>
 
@@ -707,29 +803,28 @@ Engineer
 
 <!-- ===== Проект 1 ===== -->
 
-<div class="portfolio-card">
+<div class="project">
 
-<img src="image/project1.jpg" alt="STEM Academia">
+<img src="image/project1.jpg" alt="Комфортные школы">
 
-<div class="portfolio-content">
+<div class="project-content">
 
-<span class="portfolio-tag">Project Management</span>
+<span class="project-tag">Project Management</span>
 
 <h3>Оснащение 24 «Комфортных школ»</h3>
 
 <p>
 
-Полное сопровождение проектов по оснащению образовательных учреждений мебелью, IT-инфраструктурой и STEM-лабораториями.
+Полное сопровождение проекта по оснащению современных школ мебелью, интерактивным оборудованием, компьютерными классами и STEM-лабораториями.
 
 </p>
 
-<div class="portfolio-footer">
+<a href="#">
 
-<span>🏫 24 школы</span>
+Подробнее
+<i class="fa-solid fa-arrow-right"></i>
 
-<a href="#">Подробнее →</a>
-
-</div>
+</a>
 
 </div>
 
@@ -737,29 +832,28 @@ Engineer
 
 <!-- ===== Проект 2 ===== -->
 
-<div class="portfolio-card">
+<div class="project">
 
 <img src="image/project2.jpg" alt="STEM">
 
-<div class="portfolio-content">
+<div class="project-content">
 
-<span class="portfolio-tag">STEM</span>
+<span class="project-tag">STEM Education</span>
 
 <h3>Обучение преподавателей</h3>
 
 <p>
 
-Подготовка более 1000 педагогов работе с робототехникой, Arduino, Raspberry Pi и современным оборудованием.
+Проведение семинаров, мастер-классов и практических занятий по робототехнике, Arduino, Raspberry Pi, 3D-печати и цифровым технологиям.
 
 </p>
 
-<div class="portfolio-footer">
+<a href="#">
 
-<span>👨‍🏫 1000+</span>
+Подробнее
+<i class="fa-solid fa-arrow-right"></i>
 
-<a href="#">Подробнее →</a>
-
-</div>
+</a>
 
 </div>
 
@@ -767,29 +861,28 @@ Engineer
 
 <!-- ===== Проект 3 ===== -->
 
-<div class="portfolio-card">
+<div class="project">
 
 <img src="image/project3.jpg" alt="IT">
 
-<div class="portfolio-content">
+<div class="project-content">
 
-<span class="portfolio-tag">Infrastructure</span>
+<span class="project-tag">IT Infrastructure</span>
 
-<h3>Внедрение IT-инфраструктуры</h3>
+<h3>Оснащение учебных кабинетов</h3>
 
 <p>
 
-Пусконаладочные работы, монтаж оборудования, настройка программного обеспечения и обучение персонала.
+Проектирование, поставка, монтаж и настройка компьютерных классов, серверного оборудования и мультимедийных комплексов.
 
 </p>
 
-<div class="portfolio-footer">
+<a href="#">
 
-<span>💻 100+ кабинетов</span>
+Подробнее
+<i class="fa-solid fa-arrow-right"></i>
 
-<a href="#">Подробнее →</a>
-
-</div>
+</a>
 
 </div>
 
@@ -797,29 +890,128 @@ Engineer
 
 <!-- ===== Проект 4 ===== -->
 
-<div class="portfolio-card">
+<div class="project">
 
-<img src="image/project4.jpg" alt="Olympiad">
+<img src="image/project4.jpg" alt="Robotics">
 
-<div class="portfolio-content">
+<div class="project-content">
 
-<span class="portfolio-tag">STEM Events</span>
+<span class="project-tag">Robotics</span>
 
-<h3>STEM Олимпиады</h3>
+<h3>Внедрение STEM-лабораторий</h3>
 
 <p>
 
-Организация инженерных соревнований и международных STEM-мероприятий.
+Оснащение кабинетов робототехники, программирования и инженерных дисциплин современным оборудованием.
 
 </p>
 
-<div class="portfolio-footer">
+<a href="#">
 
-<span>🌍 Международные</span>
+Подробнее
+<i class="fa-solid fa-arrow-right"></i>
 
-<a href="#">Подробнее →</a>
+</a>
 
 </div>
+
+</div>
+
+<!-- ===== Проект 5 ===== -->
+
+<div class="project">
+
+<img src="image/project5.jpg" alt="Consulting">
+
+<div class="project-content">
+
+<span class="project-tag">Consulting</span>
+
+<h3>Консалтинг образовательных организаций</h3>
+
+<p>
+
+Разработка технических решений, подбор оборудования, сопровождение закупок и консультации по внедрению современных образовательных технологий.
+
+</p>
+
+<a href="#">
+
+Подробнее
+<i class="fa-solid fa-arrow-right"></i>
+
+</a>
+
+</div>
+
+</div>
+
+<!-- ===== Проект 6 ===== -->
+
+<div class="project">
+
+<img src="image/project6.jpg" alt="Engineering">
+
+<div class="project-content">
+
+<span class="project-tag">Engineering</span>
+
+<h3>Инженерные проекты</h3>
+
+<p>
+
+Пусконаладочные работы, монтаж оборудования, настройка программного обеспечения и техническое сопровождение проектов.
+
+</p>
+
+<a href="#">
+
+Подробнее
+<i class="fa-solid fa-arrow-right"></i>
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ===== ИТОГИ ===== -->
+
+<div style="margin-top:90px;">
+
+<div class="info-grid">
+
+<div class="info-box">
+
+<h4>🏫 24</h4>
+
+<p>Оснащённых комфортных школ</p>
+
+</div>
+
+<div class="info-box">
+
+<h4>👨‍🏫 1000+</h4>
+
+<p>Обученных преподавателей</p>
+
+</div>
+
+<div class="info-box">
+
+<h4>💻 100+</h4>
+
+<p>Оснащённых кабинетов</p>
+
+</div>
+
+<div class="info-box">
+
+<h4>📈 1 млрд ₸+</h4>
+
+<p>Проектов под управлением</p>
 
 </div>
 
@@ -830,141 +1022,310 @@ Engineer
 </div>
 
 </section>
+<!--========== CERTIFICATES ==========-->
 
-<section class="certificates-section" id="certificates">
+<section id="certificates">
 
 <div class="container">
 
 <div class="section-title">
 
-<h2>Сертификаты и дипломы</h2>
+<h2>Сертификаты и достижения</h2>
 
-<p>Образование, курсы повышения квалификации и профессиональные достижения</p>
+<p>Образование, повышение квалификации и профессиональное развитие</p>
 
 </div>
 
-<div class="certificate-grid">
+<div class="cert-grid">
 
-<div class="certificate-card">
+<!-- Сертификат 1 -->
+
+<div class="cert">
 
 <img src="image/certificate1.jpg" alt="Сертификат">
 
-<div class="certificate-info">
+<div class="cert-body">
 
-<h3>Сертификаты</h3>
+<h3>Project Management</h3>
 
-<p>Курсы, повышение квалификации, STEM, робототехника.</p>
+<p>
 
-<a href="cert/sert1.pdf" target="_blank" class="certificate-btn">
+Современные методы управления проектами, управление рисками, сроками и бюджетом.
+
+</p>
+
+<a href="cert/project-management.pdf" target="_blank">
+
 Открыть PDF
+
 </a>
 
 </div>
 
 </div>
 
-<div class="certificate-card">
+<!-- Сертификат 2 -->
 
-<img src="image/diploma1.jpg" alt="Диплом">
+<div class="cert">
 
-<div class="certificate-info">
+<img src="image/certificate2.jpg" alt="Сертификат">
 
-<h3>Дипломы</h3>
+<div class="cert-body">
 
-<p>Высшее образование, магистратура и дополнительные специальности.</p>
+<h3>STEM Education</h3>
 
-<a href="diploma/diplom.pdf" target="_blank" class="certificate-btn">
+<p>
+
+Подготовка преподавателей и внедрение современных STEM-технологий в образовательный процесс.
+
+</p>
+
+<a href="cert/stem.pdf" target="_blank">
+
 Открыть PDF
+
 </a>
 
 </div>
 
 </div>
 
-<div class="certificate-card">
+<!-- Сертификат 3 -->
 
-<img src="image/award.jpg" alt="Награды">
+<div class="cert">
 
-<div class="certificate-info">
+<img src="image/certificate3.jpg" alt="Сертификат">
 
-<h3>Благодарственные письма</h3>
+<div class="cert-body">
 
-<p>Достижения в образовательной деятельности и проектной работе.</p>
+<h3>Arduino & Robotics</h3>
 
-<a href="#" class="certificate-btn">
-Подробнее
+<p>
+
+Практическое применение Arduino, робототехники и инженерных проектов.
+
+</p>
+
+<a href="cert/arduino.pdf" target="_blank">
+
+Открыть PDF
+
 </a>
+
 </div>
+
 </div>
+
+<!-- Сертификат 4 -->
+
+<div class="cert">
+
+<img src="image/certificate4.jpg" alt="Сертификат">
+
+<div class="cert-body">
+
+<h3>Business & Sales</h3>
+
+<p>
+
+Экспертные продажи, переговоры, работа с корпоративными клиентами B2B/B2G.
+
+</p>
+
+<a href="cert/business.pdf" target="_blank">
+
+Открыть PDF
+
+</a>
+
 </div>
+
 </div>
+
+<!-- Сертификат 5 -->
+
+<div class="cert">
+
+<img src="image/certificate5.jpg" alt="Сертификат">
+
+<div class="cert-body">
+
+<h3>IT Technologies</h3>
+
+<p>
+
+Информационные технологии, цифровые платформы и современные образовательные решения.
+
+</p>
+
+<a href="cert/it.pdf" target="_blank">
+
+Открыть PDF
+
+</a>
+
+</div>
+
+</div>
+
+<!-- Сертификат 6 -->
+
+<div class="cert">
+
+<img src="image/certificate6.jpg" alt="Сертификат">
+
+<div class="cert-body">
+
+<h3>Повышение квалификации</h3>
+
+<p>
+
+Курсы, семинары и профессиональное развитие в сфере образования и управления проектами.
+
+</p>
+
+<a href="cert/education.pdf" target="_blank">
+
+Открыть PDF
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Статистика -->
+
+<div style="margin-top:80px;">
+
+<div class="info-grid">
+
+<div class="info-box">
+
+<h4>🎓 50+</h4>
+
+<p>Сертификатов и курсов</p>
+
+</div>
+
+<div class="info-box">
+
+<h4>🏆 15+</h4>
+
+<p>Благодарственных писем</p>
+
+</div>
+
+<div class="info-box">
+
+<h4>📚 1000+</h4>
+
+<p>Часов обучения</p>
+
+</div>
+
+<div class="info-box">
+
+<h4>🌍 Международные</h4>
+
+<p>Программы обучения</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
 </section>
-    
-<section class="contact-section" id="contact">
+<!--========== CONTACT ==========-->
+
+<section id="contact">
 
 <div class="container">
 
 <div class="section-title">
 
-<h2>Связаться со мной</h2>
+<h2>Контакты</h2>
 
-<p>Открыт для сотрудничества, новых проектов и интересных предложений</p>
+<p>Открыт для новых проектов, сотрудничества и интересных предложений</p>
 
 </div>
 
-<div class="contact-wrapper">
+<div class="contact-grid">
 
-<div class="contact-info">
+<!-- Левая колонка -->
 
-<div class="contact-card">
+<div>
+
+<div class="contact-box">
 
 <i class="fa-solid fa-phone"></i>
 
 <div>
 
-<h3>Телефон</h3>
+<h4>Телефон</h4>
 
-<p>+7 707 856 89 48</p>
-
-</div>
-
-</div>
-
-<div class="contact-card">
-
-<i class="fa-solid fa-envelope"></i>
-
-<div>
-
-<h3>Email</h3>
-
-<p>allliba@mail.ru</p>
+<p>+7 (707) 856-89-48</p>
 
 </div>
 
 </div>
 
-<div class="contact-card">
+<div class="contact-box">
 
 <i class="fa-brands fa-whatsapp"></i>
 
 <div>
 
-<h3>WhatsApp</h3>
+<h4>WhatsApp</h4>
 
-<p>Написать в WhatsApp</p>
+<p>
+
+<a href="https://wa.me/77078568948" target="_blank">
+
+Написать сообщение
+
+</a>
+
+</p>
 
 </div>
 
 </div>
 
-<div class="contact-card">
+<div class="contact-box">
+
+<i class="fa-solid fa-envelope"></i>
+
+<div>
+
+<h4>Email</h4>
+
+<p>
+
+<a href="mailto:allliba@mail.ru">
+
+allliba@mail.ru
+
+</a>
+
+</p>
+
+</div>
+
+</div>
+
+<div class="contact-box">
 
 <i class="fa-solid fa-location-dot"></i>
 
 <div>
 
-<h3>Адрес</h3>
+<h4>Город</h4>
 
 <p>Алматы, Казахстан</p>
 
@@ -972,21 +1333,79 @@ Engineer
 
 </div>
 
+<div class="contact-box">
+
+<i class="fa-brands fa-github"></i>
+
+<div>
+
+<h4>GitHub</h4>
+
+<p>
+
+<a href="https://github.com/alibi0327" target="_blank">
+
+github.com/alibi0327
+
+</a>
+
+</p>
+
 </div>
+
+</div>
+
+<div class="contact-box">
+
+<i class="fa-brands fa-linkedin"></i>
+
+<div>
+
+<h4>LinkedIn</h4>
+
+<p>
+
+<a href="#">
+
+Добавьте ссылку на профиль
+
+</a>
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Правая колонка -->
 
 <div class="contact-form">
 
 <form>
 
-<input type="text" placeholder="Ваше имя">
+<input
+type="text"
+placeholder="Ваше имя"
+required>
 
-<input type="email" placeholder="Ваш Email">
+<input
+type="email"
+placeholder="Email"
+required>
 
-<input type="text" placeholder="Тема">
+<input
+type="text"
+placeholder="Тема сообщения">
 
-<textarea rows="6" placeholder="Ваше сообщение"></textarea>
+<textarea
+placeholder="Ваше сообщение..."
+required></textarea>
 
 <button type="submit">
+
+<i class="fa-solid fa-paper-plane"></i>
 
 Отправить сообщение
 
@@ -1004,43 +1423,124 @@ Engineer
 
 <footer>
 
-<div class="footer-content">
+<div class="container">
 
-<h2>Түлкібай Әліби Абайұлы</h2>
+<div class="footer-grid">
 
-<p>
+<div>
+
+<div class="footer-logo">
+
+Түлкібай Әліби
+
+</div>
+
+<p class="footer-text">
 
 Project Manager • STEM Trainer • IT Engineer
+
+<br><br>
+
+Специалист по управлению проектами,
+оснащению образовательных учреждений,
+внедрению STEM и цифровых технологий.
 
 </p>
 
 <div class="footer-social">
 
-<a href="#"><i class="fa-brands fa-github"></i></a>
+<a href="https://github.com/alibi0327" target="_blank">
 
-<a href="#"><i class="fa-brands fa-linkedin"></i></a>
+<i class="fa-brands fa-github"></i>
 
-<a href="mailto:allliba@mail.ru"><i class="fa-solid fa-envelope"></i></a>
+</a>
 
-<a href="https://wa.me/77078568948"><i class="fa-brands fa-whatsapp"></i></a>
+<a href="#">
+
+<i class="fa-brands fa-linkedin"></i>
+
+</a>
+
+<a href="mailto:allliba@mail.ru">
+
+<i class="fa-solid fa-envelope"></i>
+
+</a>
+
+<a href="https://wa.me/77078568948">
+
+<i class="fa-brands fa-whatsapp"></i>
+
+</a>
 
 </div>
 
-<hr>
+</div>
 
-<p>
+<div class="footer-links">
 
-© 2026 Все права защищены.
+<h3>Навигация</h3>
 
-</p>
+<ul>
+
+<li><a href="#home">Главная</a></li>
+
+<li><a href="#about">Обо мне</a></li>
+
+<li><a href="#experience">Опыт</a></li>
+
+<li><a href="#skills">Навыки</a></li>
+
+<li><a href="#portfolio">Портфолио</a></li>
+
+<li><a href="#contact">Контакты</a></li>
+
+</ul>
+
+</div>
+
+<div class="footer-contact">
+
+<h3>Быстрая связь</h3>
+
+<p>Email</p>
+
+<p>allliba@mail.ru</p>
+
+<br>
+
+<p>Телефон</p>
+
+<p>+7 (707) 856-89-48</p>
+
+<br>
+
+<p>Алматы, Казахстан</p>
+
+</div>
+
+</div>
+
+<div class="copyright">
+
+© 2026 Түлкібай Әліби Абайұлы.
+
+Все права защищены.
+
+</div>
 
 </div>
 
 </footer>
-<script src="script.js"></script>
+
 <button id="toTop">
-    <i class="fa-solid fa-arrow-up"></i>
+
+<i class="fa-solid fa-arrow-up"></i>
+
 </button>
+<script src="script.js"></script>
+
 </body>
+
 </html>
 
