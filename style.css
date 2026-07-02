@@ -590,3 +590,46 @@ padding:18px 5%;
 }
 
 }
+/*==============================
+        JAVASCRIPT
+==============================*/
+
+.hidden{
+
+opacity:0;
+
+transform:translateY(60px);
+
+transition:1s;
+
+}
+
+.show{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+.header.sticky{
+
+padding:14px 8%;
+
+background:rgba(2,6,23,.96);
+
+box-shadow:0 15px 40px rgba(0,0,0,.35);
+
+}
+
+.navbar a.active{
+
+color:#60a5fa;
+
+}
+
+.navbar a.active::after{
+
+width:100%;
+
+}
