@@ -280,11 +280,12 @@ font-weight:600;
 
 /*========================*/
 
+
 .hero h1{
 
 font-family:'Playfair Display', serif;
 
-font-size:82px;
+font-size:86px;
 
 line-height:1.05;
 
@@ -293,6 +294,10 @@ margin-bottom:20px;
 font-weight:700;
 
 letter-spacing:-1px;
+
+text-shadow:0 6px 25px rgba(0,0,0,.35);
+
+}
 
 }
 /*========================*/
