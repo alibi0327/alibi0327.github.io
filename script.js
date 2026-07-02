@@ -183,3 +183,64 @@ link.classList.add("active");
 });
 
 });
+const words=[
+
+"IT Project Manager",
+
+"STEM Trainer",
+
+"Engineer",
+
+"IT Specialist"
+
+];
+
+let i=0;
+
+let j=0;
+
+let current="";
+
+let deleting=false;
+
+function type(){
+
+current=words[i];
+
+if(!deleting){
+
+j++;
+
+}else{
+
+j--;
+
+}
+
+document.getElementById("typing").textContent=current.substring(0,j);
+
+if(!deleting && j==current.length){
+
+deleting=true;
+
+setTimeout(type,1200);
+
+return;
+
+}
+
+if(deleting && j==0){
+
+deleting=false;
+
+i++;
+
+if(i>=words.length)i=0;
+
+}
+
+setTimeout(type,deleting?40:90);
+
+}
+
+type();
