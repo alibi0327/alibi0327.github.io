@@ -280,58 +280,80 @@ loader.style.display="none";
 }
 
 });
-// ================================
-// Анимация счетчиков
-// ================================
+/*=========================================
+      PREMIUM COUNTERS
+=========================================*/
 
-const counters = document.querySelectorAll(".counter");
+const cards=document.querySelectorAll(".stat-card");
 
-const observer = new IntersectionObserver((entries) => {
+const observer=new IntersectionObserver((entries)=>{
 
-    entries.forEach(entry => {
+entries.forEach(entry=>{
 
-        if (!entry.isIntersecting) return;
+if(!entry.isIntersecting)return;
 
-        const counter = entry.target;
-
-        const target = +counter.dataset.target;
-
-        const suffix = counter.dataset.suffix || "";
-
-        let current = 0;
-
-        const duration = 1800;
-
-        const increment = target / (duration / 16);
-
-        const updateCounter = () => {
-
-            current += increment;
-
-            if (current < target) {
-
-                counter.textContent = Math.floor(current) + suffix;
-
-                requestAnimationFrame(updateCounter);
-
-            } else {
-
-                counter.textContent = target + suffix;
-
-            }
-
-        };
-
-        updateCounter();
-
-        observer.unobserve(counter);
-
-    });
-
-}, {
-
-    threshold: 0.5
+entry.target.classList.add("show");
 
 });
 
-counters.forEach(counter => observer.observe(counter));
+},{
+
+threshold:.25
+
+});
+
+cards.forEach(card=>observer.observe(card));
+
+const counters=document.querySelectorAll(".counter");
+
+const counterObserver=new IntersectionObserver((entries)=>{
+
+entries.forEach(entry=>{
+
+if(!entry.isIntersecting)return;
+
+const counter=entry.target;
+
+const target=+counter.dataset.target;
+
+const suffix=counter.dataset.suffix || "";
+
+let current=0;
+
+const duration=1800;
+
+const increment=target/(duration/16);
+
+function update(){
+
+current+=increment;
+
+if(current<target){
+
+counter.innerHTML=Math.floor(current)+suffix;
+
+requestAnimationFrame(update);
+
+}else{
+
+counter.innerHTML=target+suffix;
+
+counter.classList.add("done");
+
+}
+
+}
+
+update();
+
+counterObserver.unobserve(counter);
+
+});
+
+},{
+
+threshold:.5
+
+});
+
+counters.forEach(counter=>counterObserver.observe(counter));
