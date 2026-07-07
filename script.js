@@ -286,8 +286,7 @@ loader.style.display="none";
 
 const cards=document.querySelectorAll(".stat-card");
 
-const observer=new IntersectionObserver((entries)=>{
-
+const statObserver=new IntersectionObserver((entries)=>{
 entries.forEach(entry=>{
 
 if(!entry.isIntersecting)return;
