@@ -280,3 +280,58 @@ loader.style.display="none";
 }
 
 });
+// ================================
+// Анимация счетчиков
+// ================================
+
+const counters = document.querySelectorAll(".counter");
+
+const observer = new IntersectionObserver((entries) => {
+
+    entries.forEach(entry => {
+
+        if (!entry.isIntersecting) return;
+
+        const counter = entry.target;
+
+        const target = +counter.dataset.target;
+
+        const suffix = counter.dataset.suffix || "";
+
+        let current = 0;
+
+        const duration = 1800;
+
+        const increment = target / (duration / 16);
+
+        const updateCounter = () => {
+
+            current += increment;
+
+            if (current < target) {
+
+                counter.textContent = Math.floor(current) + suffix;
+
+                requestAnimationFrame(updateCounter);
+
+            } else {
+
+                counter.textContent = target + suffix;
+
+            }
+
+        };
+
+        updateCounter();
+
+        observer.unobserve(counter);
+
+    });
+
+}, {
+
+    threshold: 0.5
+
+});
+
+counters.forEach(counter => observer.observe(counter));
