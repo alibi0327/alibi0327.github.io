@@ -1,398 +1,286 @@
-/*=========================================
-        PORTFOLIO 2026
-        script.js
-=========================================*/
+/* =====================================
+   PORTFOLIO 2026 PRO SCRIPT
+===================================== */
 
-document.addEventListener("DOMContentLoaded", () => {
 
-    /*==============================
-        Плавная прокрутка
-    ==============================*/
 
-    document.querySelectorAll('a[href^="#"]').forEach(link => {
+// ================= LANGUAGE SWITCH =================
 
-        link.addEventListener("click", function (e) {
 
-            e.preventDefault();
+let currentLang = localStorage.getItem("language") || "ru";
 
-            const target = document.querySelector(this.getAttribute("href"));
 
-            if (target) {
+function setLanguage(lang){
 
-                target.scrollIntoView({
-                    behavior: "smooth",
-                    block: "start"
-                });
 
-            }
+currentLang = lang;
 
-        });
 
-    });
+localStorage.setItem("language", lang);
 
-    /*==============================
-        Липкая шапка
-    ==============================*/
 
-    const header = document.querySelector("header");
 
-    window.addEventListener("scroll", () => {
+document.querySelectorAll("[data-ru]").forEach(element=>{
 
-        if (window.scrollY > 40) {
 
-            header.classList.add("sticky");
+element.textContent = element.getAttribute(
+"data-" + lang
+);
 
-        } else {
 
-            header.classList.remove("sticky");
+});
 
-        }
 
-    });
 
-    /*==============================
-        Кнопка наверх
-    ==============================*/
+document.documentElement.lang = lang;
 
-    const toTop = document.getElementById("toTop");
 
-    if (toTop) {
 
-        window.addEventListener("scroll", () => {
+let button = document.getElementById("langBtn");
 
-            if (window.scrollY > 500) {
 
-                toTop.classList.add("show");
+if(button){
 
-            } else {
+button.textContent = lang === "ru" ? "KZ" : "RU";
 
-                toTop.classList.remove("show");
+}
 
-            }
 
-        });
+}
 
-        toTop.addEventListener("click", () => {
 
-            window.scrollTo({
 
-                top: 0,
 
-                behavior: "smooth"
+document.addEventListener("DOMContentLoaded",()=>{
 
-            });
 
-        });
+setLanguage(currentLang);
 
-    }
 
-    /*==============================
-        Печатающийся текст
-    ==============================*/
 
-    const typing = document.getElementById("typing");
+const langBtn =
+document.getElementById("langBtn");
 
-    if (typing) {
 
-        const words = [
 
-            "IT Project Manager",
-            "STEM Trainer",
-            "Engineer",
-            "Project Coordinator"
+if(langBtn){
 
-        ];
 
-        let wordIndex = 0;
-        let charIndex = 0;
-        let deleting = false;
+langBtn.addEventListener("click",()=>{
 
-        function typeEffect() {
 
-            const word = words[wordIndex];
+if(currentLang==="ru"){
 
-            if (deleting) {
+setLanguage("kz");
 
-                charIndex--;
+}
 
-            } else {
+else{
 
-                charIndex++;
+setLanguage("ru");
 
-            }
+}
 
-            typing.textContent = word.substring(0, charIndex);
 
-            if (!deleting && charIndex === word.length) {
 
-                deleting = true;
+});
 
-                setTimeout(typeEffect, 1500);
 
-                return;
+}
 
-            }
 
-            if (deleting && charIndex === 0) {
 
-                deleting = false;
+});
 
-                wordIndex++;
 
-                if (wordIndex >= words.length) {
 
-                    wordIndex = 0;
 
-                }
 
-            }
 
-            setTimeout(typeEffect, deleting ? 45 : 90);
 
-        }
+// ================= EXPERIENCE DETAILS =================
 
-        typeEffect();
 
-    }
 
-    /*==============================
-        Меню телефона
-    ==============================*/
+function toggleJob(id){
 
-    const menuBtn = document.querySelector(".menu-btn");
-    const nav = document.querySelector("nav");
 
-    if (menuBtn && nav) {
+let block =
+document.getElementById(id);
 
-        menuBtn.addEventListener("click", () => {
 
-            nav.classList.toggle("open");
 
-        });
+if(block){
 
-    }
 
-    const navLinks = document.querySelectorAll("nav a");
+if(block.style.display==="block"){
 
-    navLinks.forEach(link => {
 
-        link.addEventListener("click", () => {
+block.style.display="none";
 
-            if (nav.classList.contains("open")) {
 
-                nav.classList.remove("open");
+}
 
-            }
+else{
 
-        });
 
-    });
+block.style.display="block";
 
-    /*==============================
-        Анимация появления
-    ==============================*/
 
-    const animatedElements = document.querySelectorAll(`
-        section,
-        .project,
-        .skill-card,
-        .timeline-item,
-        .cert,
-        .contact-box,
-        .info-box,
-        .stat-card
-    `);
+}
 
-    animatedElements.forEach(item => {
 
-        item.classList.add("hidden");
 
-    });
+}
 
-    const revealObserver = new IntersectionObserver((entries) => {
 
-        entries.forEach(entry => {
+}
 
-            if (!entry.isIntersecting) return;
 
-            entry.target.classList.add("show");
 
-            revealObserver.unobserve(entry.target);
 
-        });
 
-    }, {
 
-        threshold: 0.15
 
-    });
 
-    animatedElements.forEach(item => {
+// ================= MOBILE MENU =================
 
-        revealObserver.observe(item);
 
-    });
+const menuButton =
+document.querySelector(".menu");
 
-    /*==============================
-        Premium Counter
-    ==============================*/
+const navigation =
+document.querySelector("nav");
 
-    const counters = document.querySelectorAll(".counter");
 
-    const counterObserver = new IntersectionObserver((entries) => {
 
-        entries.forEach(entry => {
+if(menuButton){
 
-            if (!entry.isIntersecting) return;
 
-            const counter = entry.target;
+menuButton.addEventListener("click",()=>{
 
-            const target = Number(counter.dataset.target);
 
-            const suffix = counter.dataset.suffix || "";
+navigation.classList.toggle("active");
 
-            let current = 0;
 
-            const duration = 1800;
+});
 
-            const step = Math.max(1, target / (duration / 16));
 
-            function animateCounter() {
+}
 
-                current += step;
 
-                if (current < target) {
 
-                    counter.textContent =
-                        Math.floor(current).toLocaleString("ru-RU") + suffix;
 
-                    requestAnimationFrame(animateCounter);
 
-                } else {
 
-                    counter.textContent =
-                        target.toLocaleString("ru-RU") + suffix;
 
-                    counter.classList.add("done");
+// Закрытие меню после перехода
 
-                }
 
-            }
+document.querySelectorAll("nav a")
+.forEach(link=>{
 
-            animateCounter();
 
-            counterObserver.unobserve(counter);
+link.addEventListener("click",()=>{
 
-        });
 
-    }, {
+navigation.classList.remove("active");
 
-        threshold: 0.45
 
-    });
+});
 
-    counters.forEach(counter => {
 
-        counterObserver.observe(counter);
+});
 
-    });
 
-    /*==============================
-        Активный пункт меню
-    ==============================*/
 
-    const sections = document.querySelectorAll("section");
 
-    window.addEventListener("scroll", () => {
 
-        let current = "";
 
-        sections.forEach(section => {
 
-            const top = section.offsetTop - 180;
 
-            if (window.scrollY >= top) {
+// ================= SCROLL ANIMATION =================
 
-                current = section.id;
 
-            }
 
-        });
+const observer =
+new IntersectionObserver(
+(entries)=>{
 
-        navLinks.forEach(link => {
 
-            link.classList.remove("active");
+entries.forEach(entry=>{
 
-            if (link.getAttribute("href") === "#" + current) {
 
-                link.classList.add("active");
+if(entry.isIntersecting){
 
-            }
 
-        });
+entry.target.classList.add("show");
 
-    });
 
-    /*==============================
-        Прелоадер (если используется)
-    ==============================*/
+}
 
-    window.addEventListener("load", () => {
 
-        const loader = document.getElementById("loader");
+});
 
-        if (loader) {
 
-            loader.style.opacity = "0";
+},
+{
 
-            setTimeout(() => {
+threshold:0.15
 
-                loader.style.display = "none";
+});
 
-            }, 500);
 
-        }
 
-    });
 
-    /*==============================
-        Параллакс фото (необязательно)
-    ==============================*/
 
-    const heroImage = document.querySelector(".hero-image");
+document.querySelectorAll(
+".project-card, .skill-box, .experience-card, .contact-card, .certificate-card"
+)
+.forEach(element=>{
 
-    if (heroImage) {
 
-        window.addEventListener("mousemove", (e) => {
+observer.observe(element);
 
-            const x = (window.innerWidth / 2 - e.clientX) / 45;
-            const y = (window.innerHeight / 2 - e.clientY) / 45;
 
-            heroImage.style.transform =
-                `translate(${x}px, ${y}px)`;
+});
 
-        });
 
-    }
 
-    /*==============================
-        Hover эффект карточек
-    ==============================*/
 
-    document.querySelectorAll(
-        ".project,.skill-card,.cert,.info-box,.stat-card"
-    ).forEach(card => {
 
-        card.addEventListener("mouseenter", () => {
 
-            card.style.transition = ".35s";
 
-        });
 
-    });
+// ================= HEADER EFFECT =================
 
-    /*==============================
-        Конец файла
-    ==============================*/
+
+
+window.addEventListener(
+"scroll",
+()=>{
+
+
+const header =
+document.querySelector("header");
+
+
+
+if(window.scrollY>50){
+
+
+header.classList.add("scrolled");
+
+
+}
+
+else{
+
+
+header.classList.remove("scrolled");
+
+
+}
+
 
 });
