@@ -1576,14 +1576,13 @@ transform:translateY(-6px);
 ==================================================*/
 
 .hidden{
-    opacity:0;
-    transform:translateY(60px);
-    transition:1s;
+    opacity:1;
+    transform:none;
 }
 
 .show{
     opacity:1;
-    transform:translateY(0);
+    transform:none;
 }
 
 }
@@ -1894,6 +1893,14 @@ gap:20px;
     color: var(--gray);
     line-height: 1.5;
     min-height: 30px;
+}
+
+#typing{
+    display:inline-block;
+    width:420px;
+    height:30px;
+    text-align:center;
+    white-space:nowrap;
 }
 
 }
