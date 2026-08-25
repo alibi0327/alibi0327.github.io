@@ -468,26 +468,51 @@ Project Management,  Consultative Selling, Business Analysis, Stakeholder Manage
 
 <!-- ===== Проект 2 ===== -->
 <div class="project">
-<img src="image/project3.jpg" alt="STEM">
-<div class="project-content">
-<span class="project-tag">STEM Education</span>
-<h3>Обучение преподавателей</h3>
-<p>Проведение семинаров, мастер-классов и практических занятий по робототехнике, Arduino, Raspberry Pi, 3D-печати и цифровым технологиям.</p>
-<a href="#">
-Подробнее
-<i class="fa-solid fa-arrow-right"></i>
-<details>
-<summary>Подробнее</summary>
-<ul>
-Разработка методики обучения, внедрение новых технологий.
-Обмен опытов между преподавателями.
-Постоянная техническое сопровождение.
-Поддержка.
-</ul>
-</details>
+    <img src="image/project3.jpg" alt="STEM">
 
-</a>
+    <div class="project-content">
+        <span class="project-tag">STEM Education</span>
+
+        <h3>Обучение преподавателей</h3>
+
+        <p>
+            Проведение семинаров, мастер-классов и практических занятий
+            по робототехнике, Arduino, Raspberry Pi, 3D-печати
+            и цифровым технологиям.
+        </p>
+
+        <a href="#" class="more-btn" onclick="openModal(event)">
+            Подробнее
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+    </div>
 </div>
+
+
+<!-- Модальное окно -->
+<div id="projectModal" class="modal">
+    <div class="modal-content">
+        <button class="modal-close" onclick="closeModal()">
+            &times;
+        </button>
+        <span class="project-tag">STEM Education</span>
+        <h2>Обучение преподавателей</h2>
+        <p>
+            Проведение комплексного обучения преподавателей современным
+            STEM-технологиям и цифровым инструментам.
+        </p>
+        <ul>
+            <li>Разработка методики обучения.</li>
+            <li>Проведение семинаров и мастер-классов.</li>
+            <li>Обучение робототехнике и Arduino.</li>
+            <li>Работа с Raspberry Pi.</li>
+            <li>Обучение 3D-моделированию и 3D-печати.</li>
+            <li>Внедрение новых цифровых технологий.</li>
+            <li>Обмен опытом между преподавателями.</li>
+            <li>Постоянное техническое сопровождение.</li>
+            <li>Поддержка преподавателей после обучения.</li>
+        </ul>
+    </div>
 </div>
 
 <!-- ===== Проект 3 ===== -->
